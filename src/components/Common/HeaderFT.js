@@ -40,29 +40,6 @@ const Header = () => {
         </div>
       </ContainerFT>
       <div className={classes.gnbWrap}>
-        {/* <ul className={classes.gnb}>
-            <li>
-              <Link to='/'>
-                <MenuOutlined style={{ marginRight: 5 }} />
-                Category
-              </Link>
-            </li>
-            <li>
-              <Link to='/'>New</Link>
-            </li>
-            <li>
-              <Link to='/'>Best</Link>
-            </li>
-            <li>
-              <Link to='/'>Showroom</Link>
-            </li>
-            <li>
-              <Link to='/'>Event</Link>
-            </li>
-            <li>
-              <Link to='/'>Review</Link>
-            </li>
-          </ul> */}
         <ContainerFT>
           <div className={classes.gnbAD}>
             <GnbAD></GnbAD>
