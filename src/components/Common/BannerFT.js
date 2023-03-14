@@ -12,6 +12,7 @@ import "./BannerFT.css";
 
 const Swipe = () => {
   return (
+    <>
     <Swiper
       className={styles}
       // install Swiper modules
@@ -49,6 +50,7 @@ const Swipe = () => {
       </SwiperSlide>
       ...
     </Swiper>
+    </>
   );
 };
 export default Swipe;
