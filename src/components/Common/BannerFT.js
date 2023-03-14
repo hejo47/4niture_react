@@ -33,19 +33,19 @@ const Swipe = () => {
     >
       <SwiperSlide>
         <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src="../images/banner/slide-1.jpg" alt="의자1" />
+        <img src="/images/banner/slide-1.jpg" alt="의자1" />
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src="../images/banner/slide-2.jpg" alt="의자1" />
+        <img src="/images/banner/slide-2.jpg" alt="의자1" />
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src="../images/banner/slide-3.jpg" alt="의자1" />
+        <img src="/images/banner/slide-3.jpg" alt="의자1" />
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src="../images/banner/slide-1.jpg" alt="의자1" />
+        <img src="/images/banner/slide-1.jpg" alt="의자1" />
       </SwiperSlide>
       ...
     </Swiper>
