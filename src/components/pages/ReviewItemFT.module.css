@@ -1,0 +1,51 @@
+.reviewCon {
+  width: calc(98% / 4);
+}
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+}
+.authorimg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
+}
+.authorname {
+  font-size: 13px;
+  color: #333;
+}
+.authorfollow {
+  color: skyblue;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contentimg {
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 15px;
+  background-color: #666;
+  margin-top: 15px;
+}
+
+.contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+.contents span {
+  font-size: 30px;
+  color: #aaa;
+  margin-right: 10px;
+}
+span.btnspan {
+  font-size: 25px;
+}
