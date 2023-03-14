@@ -3,17 +3,19 @@ import HeaderFT from "./components/Common/HeaderFT";
 import FooterFT from "./components/Common/FooterFT";
 import MainNewProductsFT from "./components/pages/MainNewProductsFT";
 import MainBestProductsFT from "./components/pages/MainBestProductsFT";
+import Swipe from "./components/Common/BannerFT";
 import MainLongTabFT from "./components/pages/MainLongTabFT";
 import ReviewsFT from "./components/pages/ReviewsFT";
 import LoginAD from "./components/pages/LoginAD";
 import { Routes, Route } from "react-router-dom";
 import ContainerFT from "./components/UI/ContainerFT";
+
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Routes>
         <Route
-          path='/login'
+          path="/login"
           element={
             <>
               <ContainerFT>
@@ -27,11 +29,14 @@ function App() {
         />
       </Routes>
       <HeaderFT></HeaderFT>
+      <Swipe />
       <MainNewProductsFT></MainNewProductsFT>
       <MainBestProductsFT></MainBestProductsFT>
-      <MainLongTabFT></MainLongTabFT>
 
+      <MainLongTabFT></MainLongTabFT>
+      
       <ReviewsFT></ReviewsFT>
+
       <FooterFT></FooterFT>
     </div>
   );
