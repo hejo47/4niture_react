@@ -1,13 +1,12 @@
-.contentStyle{
-    height: 600px;
-    color: #fff;
-    line-height: 560px;
+.Textbox{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
     text-align: center;
-    background: #364d79;
-}
-img{
-    position: relative;
-    top: 0;
-    box-sizing: content-box;
-}
+    color: white;
+   
 
+}

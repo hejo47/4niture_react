@@ -1,22 +1,19 @@
 import "./App.css";
 import HeaderFT from "./components/Common/HeaderFT";
 import FooterFT from "./components/Common/FooterFT";
-<<<<<<< HEAD
-import Swiper  from "./components/Common/BannerFT";
-
-=======
+import Swipe from "./components/Common/BannerFT";
 import MainLongTabFT from "./components/pages/MainLongTabFT";
 import ReviewsFT from "./components/pages/ReviewsFT";
 import LoginAD from "./components/pages/LoginAD";
 import { Routes, Route } from "react-router-dom";
 import ContainerFT from "./components/UI/ContainerFT";
->>>>>>> 917c69ee8bc6eb7d00109a939e2a37d9784d863f
+
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Routes>
         <Route
-          path='/login'
+          path="/login"
           element={
             <>
               <ContainerFT>
@@ -30,16 +27,14 @@ function App() {
         />
       </Routes>
       <HeaderFT></HeaderFT>
-<<<<<<< HEAD
-      <Swiper />
-=======
+
+      <Swipe />
 
       <MainLongTabFT></MainLongTabFT>
-
-      <ReviewsFT></ReviewsFT>
->>>>>>> 917c69ee8bc6eb7d00109a939e2a37d9784d863f
-      <FooterFT></FooterFT>
       
+      <ReviewsFT></ReviewsFT>
+
+      <FooterFT></FooterFT>
     </div>
   );
 }
