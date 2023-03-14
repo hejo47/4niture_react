@@ -1,0 +1,21 @@
+.productTheme{
+    width:50%;
+    min-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding : 1em;
+    position: relative;
+}
+.productTheme>img{
+    width: 100%;
+}
+.productTheme>div{
+    position: absolute;
+    top:30%;
+    right: 50%;
+    text-align: center;
+}
+.productTheme>div>p{
+    font-size: 2em;
+    font-weight: 900;
+}
