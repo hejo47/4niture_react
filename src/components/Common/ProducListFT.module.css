@@ -1,0 +1,46 @@
+.productList{
+    width: 50%;
+    min-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-content:space-around;
+    
+}
+
+.product{
+    max-width: 100%;
+    width: 240px;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.productImg {
+    width: 100%;
+}
+
+.productImg>img{
+    width: 100%;
+}
+
+.productDescription{/* 기준점으로 의미없이 채워논 css */
+    font-size: 1em;
+
+}
+.productName{
+    color:#333;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.productPrice{
+    color: rgb(112, 10, 10);
+    font-size:1em;
+}
+.reviewNumber{
+    color:#666;
+    font-size:0.8em
+}

@@ -27,6 +27,10 @@ function App() {
               </ContainerFT>
               <MainLongTabFT></MainLongTabFT>
               <ContainerFT>
+                <MainLongTabFT></MainLongTabFT>
+                <MainNewProductsFT></MainNewProductsFT>
+                <MainBestProductsFT></MainBestProductsFT>
+
                 <ShowRoomFT></ShowRoomFT>
                 <ReviewsFT></ReviewsFT>
               </ContainerFT>
