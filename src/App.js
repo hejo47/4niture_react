@@ -22,9 +22,8 @@ function App() {
               <HeaderFT></HeaderFT>
               <Swipe />
               <ContainerFT>
-                <MainLongTabFT></MainLongTabFT>
-                <MainNewProductsFT></MainNewProductsFT>
                 <MainBestProductsFT></MainBestProductsFT>
+                <MainNewProductsFT></MainNewProductsFT>
                 <ShowRoomFT></ShowRoomFT>
                 <ReviewsFT></ReviewsFT>
               </ContainerFT>
