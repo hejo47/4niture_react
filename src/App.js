@@ -9,13 +9,31 @@ import ReviewsFT from "./components/pages/ReviewsFT";
 import LoginAD from "./components/pages/LoginAD";
 import { Routes, Route } from "react-router-dom";
 import ContainerFT from "./components/UI/ContainerFT";
+import ShowRoomFT from "./components/pages/ShowRoomFT";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Routes>
         <Route
-          path="/login"
+          path='/'
+          element={
+            <>
+              <HeaderFT></HeaderFT>
+              <Swipe />
+              <ContainerFT>
+                <MainLongTabFT></MainLongTabFT>
+                <MainNewProductsFT></MainNewProductsFT>
+                <MainBestProductsFT></MainBestProductsFT>
+                <ShowRoomFT></ShowRoomFT>
+                <ReviewsFT></ReviewsFT>
+              </ContainerFT>
+              <FooterFT></FooterFT>
+            </>
+          }
+        />
+        <Route
+          path='/login'
           element={
             <>
               <ContainerFT>
@@ -28,16 +46,6 @@ function App() {
           }
         />
       </Routes>
-      <HeaderFT></HeaderFT>
-      <Swipe />
-      <MainNewProductsFT></MainNewProductsFT>
-      <MainBestProductsFT></MainBestProductsFT>
-
-      <MainLongTabFT></MainLongTabFT>
-      
-      <ReviewsFT></ReviewsFT>
-
-      <FooterFT></FooterFT>
     </div>
   );
 }
