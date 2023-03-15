@@ -24,6 +24,9 @@ function App() {
               <ContainerFT>
                 <MainBestProductsFT></MainBestProductsFT>
                 <MainNewProductsFT></MainNewProductsFT>
+              </ContainerFT>
+              <MainLongTabFT></MainLongTabFT>
+              <ContainerFT>
                 <ShowRoomFT></ShowRoomFT>
                 <ReviewsFT></ReviewsFT>
               </ContainerFT>
