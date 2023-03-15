@@ -10,6 +10,7 @@ import LoginAD from "./components/pages/LoginAD";
 import { Routes, Route } from "react-router-dom";
 import ContainerFT from "./components/UI/ContainerFT";
 import ShowRoomFT from "./components/pages/ShowRoomFT";
+import ReviewSub from "./components/pages/ReviewSubAD";
 
 function App() {
   return (
@@ -47,7 +48,24 @@ function App() {
             </>
           }
         />
+        
+        <Route
+          path='/ReviewSub'
+          element={
+            <>
+              <ContainerFT>
+                <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
+                  <ReviewSub/>
+                </div>
+              </ContainerFT>
+              <FooterFT></FooterFT>
+            </>
+          }
+        />
+      
       </Routes>
+        
+      
     </div>
   );
 }

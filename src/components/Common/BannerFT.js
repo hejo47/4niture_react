@@ -9,6 +9,10 @@ import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
 import styles from "./BannerFT.module.css";
 import "./BannerFT.css";
+import Banner1 from "../../img/banner/Slide-1.jpg";
+import Banner2 from "../../img/banner/Slide-2.jpg";
+import Banner3 from "../../img/banner/Slide-3.jpg";
+
 
 const Swipe = () => {
   return (
@@ -34,21 +38,16 @@ const Swipe = () => {
     >
       <SwiperSlide>
         <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src="/images/banner/slide-1.jpg" alt="의자1" />
+        <img src={Banner1} alt="의자1" />
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src="/images/banner/slide-2.jpg" alt="의자1" />
+        <img src={Banner2} alt="" />
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src="/images/banner/slide-3.jpg" alt="의자1" />
+        <img src={Banner3} alt="의자1" />
       </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src="/images/banner/slide-1.jpg" alt="의자1" />
-      </SwiperSlide>
-      ...
     </Swiper>
     </>
   );
