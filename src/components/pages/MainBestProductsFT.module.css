@@ -1,7 +1,7 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
 .productIntroduction{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
+h3{font-size: 2em; color: #383633; padding: 20px 0 10px 10px;}

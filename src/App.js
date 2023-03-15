@@ -10,6 +10,8 @@ import LoginAD from "./components/pages/LoginAD";
 import { Routes, Route } from "react-router-dom";
 import ContainerFT from "./components/UI/ContainerFT";
 import ShowRoomFT from "./components/pages/ShowRoomFT";
+import { Header } from "antd/es/layout/layout";
+import UploadAD from "./components/pages/UploadAD";
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
               <Swipe />
               <ContainerFT>
                 <MainLongTabFT></MainLongTabFT>
-                <MainNewProductsFT></MainNewProductsFT>
+                <MainNewProductsFT>
+                </MainNewProductsFT>
                 <MainBestProductsFT></MainBestProductsFT>
                 <ShowRoomFT></ShowRoomFT>
                 <ReviewsFT></ReviewsFT>
@@ -32,6 +35,7 @@ function App() {
             </>
           }
         />
+        
         <Route
           path='/login'
           element={
@@ -45,6 +49,18 @@ function App() {
             </>
           }
         />
+        <Route path='/upload'
+        element={
+          <>
+          <ContainerFT>
+            <HeaderFT/>
+            <UploadAD/>
+            <FooterFT/>
+          </ContainerFT>
+          </>
+        }>
+        </Route>
+
       </Routes>
     </div>
   );
