@@ -6,7 +6,7 @@ const ShowRoomFT = () => {
   return (
     <section className={classes.ShowRoom}>
       <div className={classes.room1}>
-        <img src=".images/roomimages/showroom1.jpg" alt="" />
+        <img src="./images/roomimages/showroom1.jpg" alt="" />
         <Link to="" className={classes.ShowRoomDesc}>
           <span className={`${classes.curclew} ${classes.point1}`}></span>
           <span className={`${classes.DescText} ${classes.DescText1}`}>
