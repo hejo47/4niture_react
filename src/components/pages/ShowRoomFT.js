@@ -72,7 +72,7 @@ const ShowRoomFT = () => {
         <Link to="" className={classes.ShowRoomDesc}>
           <span className={`${classes.curclew} ${classes.point9}`}></span>
           <span className={`${classes.DescText} ${classes.DescText9}`}>
-            Design Table Lamp2
+            Design Table Lamp22
             <br />
             49,000원
           </span>
