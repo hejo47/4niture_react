@@ -6,7 +6,7 @@ const ShowRoomFT = () => {
   return (
     <section className={classes.ShowRoom}>
       <div className={classes.room1}>
-        <img src="./roomimages/showroom1.jpg" alt="" />
+        <img src=".images/roomimages/showroom1.jpg" alt="" />
         <Link to="" className={classes.ShowRoomDesc}>
           <span className={`${classes.curclew} ${classes.point1}`}></span>
           <span className={`${classes.DescText} ${classes.DescText1}`}>
@@ -60,7 +60,7 @@ const ShowRoomFT = () => {
         </Link>
       </div>
       <div className={classes.room2}>
-        <img src="./roomimages/showroom2.jpg" alt="" />
+        <img src="./images/roomimages/showroom2.jpg" alt="" />
         <Link to="" className={classes.ShowRoomDesc}>
           <span className={`${classes.curclew} ${classes.point8}`}></span>
           <span className={`${classes.DescText} ${classes.DescText8}`}>
