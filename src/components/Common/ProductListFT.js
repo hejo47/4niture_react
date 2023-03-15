@@ -52,7 +52,7 @@ const ProductListFT=(props)=>{
             return(
                 <>
                     <div className={classes.productList}>
-                        {productList.map((value) => {console.log(props.theme)
+                        {productList.map((value) => {
                             let {name,price,reviewNum}=value;
                             return(
                                 <>
