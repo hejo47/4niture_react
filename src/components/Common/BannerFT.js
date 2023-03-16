@@ -24,7 +24,8 @@ const Swipe = () => {
       spaceBetween={50}
       slidesPerView={1}
       navigation
-      effect="fade"
+      speed={1000}
+      effect={"fade"}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}

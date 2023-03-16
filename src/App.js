@@ -68,7 +68,8 @@ function App() {
           element={
             <>
               <ContainerFT>
-                <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
+                <HeaderFT/>
+                  <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
                   <ReviewSub/>
                 </div>
               </ContainerFT>
