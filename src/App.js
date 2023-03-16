@@ -12,6 +12,7 @@ import ContainerFT from "./components/UI/ContainerFT";
 import ShowRoomFT from "./components/pages/ShowRoomFT";
 import { Header } from "antd/es/layout/layout";
 import UploadAD from "./components/pages/UploadAD";
+import ReviewSub from "./components/pages/ReviewSubAD";
 
 function App() {
   return (
@@ -61,7 +62,23 @@ function App() {
         }>
         </Route>
 
+        
+        <Route
+          path='/ReviewSub'
+          element={
+            <>
+              <ContainerFT>
+                <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
+                  <ReviewSub/>
+                </div>
+              </ContainerFT>
+              <FooterFT></FooterFT>
+            </>
+          }
+        />
       </Routes>
+        
+      
     </div>
   );
 }
