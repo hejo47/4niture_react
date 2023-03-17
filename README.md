@@ -11,3 +11,13 @@ containerFT
 containerAD
 
 개인 브랜치 - 디벨롭 - 메인
+
+clone 후 npm 순서
+
+npm i
+
+npm i react-router-dom
+
+npm i antd
+
+npm install swiper
