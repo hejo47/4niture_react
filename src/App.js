@@ -13,6 +13,7 @@ import ShowRoomFT from "./components/pages/ShowRoomFT";
 import { Header } from "antd/es/layout/layout";
 import UploadAD from "./components/pages/UploadAD";
 import ReviewSub from "./components/pages/ReviewSubAD";
+import NewProductPageAD from "./components/pages/NewProductPageAD";
 
 function App() {
   return (
@@ -55,14 +56,14 @@ function App() {
           <>
           <ContainerFT>
             <HeaderFT/>
+            <div style={{maxWidth:500, margin:"0 auto", paddingTop:200, paddingBottom:200}}>
             <UploadAD/>
+            </div>
             <FooterFT/>
           </ContainerFT>
           </>
         }>
         </Route>
-
-        
         <Route
           path='/ReviewSub'
           element={
@@ -77,6 +78,20 @@ function App() {
           }
         />
       </Routes>
+      <Routes>    
+      <Route path='/newproduct'
+        element={
+          <>
+            <HeaderFT/>
+          <ContainerFT>
+            <div style={{ margin:"0 auto", paddingTop:100, paddingBottom:100}}>
+            <NewProductPageAD/>
+            </div>
+          </ContainerFT>
+            <FooterFT/>
+          </>
+        }></Route>
+        </Routes>
         
       
     </div>
