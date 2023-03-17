@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, ConfigProvider, Form, Input, Upload, Divider, Select, message } from "antd";
+import { Button, ConfigProvider, Form, Input, Upload, Divider, message } from "antd";
 import styles from "./ReviewSubAD.module.css";
 import { PlusOutlined } from '@ant-design/icons';
 
-const { Option } = Select;
+
 const { TextArea } = Input;
 
 const ReviewSub = () => {
@@ -40,13 +40,7 @@ const ReviewSub = () => {
               <span>jpg | png</span>
             </div>
           </Form.Item>
-          <Form.Item name="gender" label="성별" rules={[{ required: true }]}>
-            <Select placeholder="성별을 선택해주세요"  allowClear>
-              <Option value="male">남자</Option>
-              <Option value="female">여자</Option>
-              <Option value="other">기타</Option>
-            </Select>
-          </Form.Item>
+        
           <Divider></Divider>
           <Form.Item label={<span className="upload-label">상품명</span>} name="product-name" rules={[{ required: true, message: "후기 글을 써주세요" }]}>
             <Input className={styles.uploadName} placeholder="상품명을 입력해주세요" size="large" />
