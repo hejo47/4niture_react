@@ -8,14 +8,28 @@
 }
 .productTheme>img{
     width: 100%;
+    filter: invert(0.2);    
 }
 .productTheme>div{
     position: absolute;
-    top:30%;
-    right: 50%;
+    top:40%;
+    right: 30%;
     text-align: center;
+    color: #f7eee3;
 }
-.productTheme>div>p{
-    font-size: 2em;
+.productTheme>div{
+    
+    
+}
+.productTheme>div>span{
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #f7eee3;
+
+}
+.productTheme>div>p>a{
+    font-size: 3em;
     font-weight: 900;
+    color: #f7eee3;
+
 }

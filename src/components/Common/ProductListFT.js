@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import classes from "./ProducListFT.module.css"
 import nh_test from "../../img/nh_test.jpg"
 
@@ -52,10 +53,11 @@ const ProductListFT=(props)=>{
             return(
                 <>
                     <div className={classes.productList}>
-                        {productList.map((value) => {console.log(props.theme)
+                        {productList.map((value) => {
                             let {name,price,reviewNum}=value;
                             return(
                                 <>
+                                <Link to="/newproduct">
                                 <div className={classes.product}>
                                     <div className={classes.productImg}>
                                         <img src={nh_test} alt=""/>
@@ -66,6 +68,7 @@ const ProductListFT=(props)=>{
                                         <p className={classes.reviewNumber}>리뷰수{reviewNum}</p>
                                     </div>
                                 </div>
+                                </Link>
                                 </>
                             )
                         })}
