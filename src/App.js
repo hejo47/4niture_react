@@ -19,7 +19,7 @@ function App() {
     <div className='App'>
       <Routes>
         <Route
-          path='/'
+          path='/' // 메인
           element={
             <>
               <HeaderFT></HeaderFT>
@@ -39,7 +39,7 @@ function App() {
         />
 
         <Route
-          path='/login'
+          path='/login' // 로그인
           element={
             <>
               <ContainerFT>
@@ -52,7 +52,7 @@ function App() {
           }
         />
         <Route
-          path='/upload'
+          path='/propduct/upload' // 새 상품 올리기
           element={
             <>
               <ContainerFT>
@@ -66,7 +66,7 @@ function App() {
           }
         ></Route>
         <Route
-          path='/ReviewSub'
+          path='/review/upload' // 리뷰 올리기
           element={
             <>
               <ContainerFT>
@@ -82,7 +82,7 @@ function App() {
       </Routes>
       <Routes>
         <Route
-          path='/newproduct'
+          path='/product/new' // 새 상품 리스트
           element={
             <>
               <HeaderFT />
