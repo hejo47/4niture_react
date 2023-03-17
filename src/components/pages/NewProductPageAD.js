@@ -44,11 +44,11 @@ const NewProductPageAD = () => {
             return (
               <>
                 <Routes>
-                  <Route path='/upload' element={<UploadAD />}></Route>
+                  <Route path='/product/upload' element={<UploadAD />}></Route>
                 </Routes>
                 <Col span={6}>
                   <Card hoverable style={{ width: 240 }} cover={<img alt='example' src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png' />}>
-                    <Link to='/upload'>
+                    <Link to='/product/upload'>
                       <Meta title={name} description={price} />
                     </Link>
                   </Card>
