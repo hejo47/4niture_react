@@ -51,4 +51,9 @@
     cursor: auto;
     
 }
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+   color:#F25A29 ;
+    
+}
 

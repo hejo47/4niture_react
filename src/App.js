@@ -10,7 +10,10 @@ import LoginAD from "./components/pages/LoginAD";
 import { Routes, Route } from "react-router-dom";
 import ContainerFT from "./components/UI/ContainerFT";
 import ShowRoomFT from "./components/pages/ShowRoomFT";
+import { Header } from "antd/es/layout/layout";
+import UploadAD from "./components/pages/UploadAD";
 import ReviewSub from "./components/pages/ReviewSubAD";
+import NewProductPageAD from "./components/pages/NewProductPageAD";
 
 function App() {
   return (
@@ -23,8 +26,8 @@ function App() {
               <HeaderFT></HeaderFT>
               <Swipe />
               <ContainerFT>
-                <MainBestProductsFT></MainBestProductsFT>
                 <MainNewProductsFT></MainNewProductsFT>
+                <MainBestProductsFT></MainBestProductsFT>
               </ContainerFT>
               <MainLongTabFT></MainLongTabFT>
               <ContainerFT>
@@ -35,6 +38,7 @@ function App() {
             </>
           }
         />
+
         <Route
           path='/login'
           element={
@@ -48,24 +52,51 @@ function App() {
             </>
           }
         />
-        
+        <Route
+          path='/upload'
+          element={
+            <>
+              <ContainerFT>
+                <HeaderFT />
+                <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
+                  <UploadAD />
+                </div>
+                <FooterFT />
+              </ContainerFT>
+            </>
+          }
+        ></Route>
         <Route
           path='/ReviewSub'
           element={
             <>
               <ContainerFT>
+                <HeaderFT />
                 <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
-                  <ReviewSub/>
+                  <ReviewSub />
                 </div>
               </ContainerFT>
               <FooterFT></FooterFT>
             </>
           }
         />
-      
       </Routes>
-        
-      
+      <Routes>
+        <Route
+          path='/newproduct'
+          element={
+            <>
+              <HeaderFT />
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <NewProductPageAD />
+                </div>
+              </ContainerFT>
+              <FooterFT />
+            </>
+          }
+        ></Route>
+      </Routes>
     </div>
   );
 }
