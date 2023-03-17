@@ -10,7 +10,6 @@ import LoginAD from "./components/pages/LoginAD";
 import { Routes, Route } from "react-router-dom";
 import ContainerFT from "./components/UI/ContainerFT";
 import ShowRoomFT from "./components/pages/ShowRoomFT";
-import { Header } from "antd/es/layout/layout";
 import UploadAD from "./components/pages/UploadAD";
 import ReviewSub from "./components/pages/ReviewSubAD";
 import NewProductPageAD from "./components/pages/NewProductPageAD";
