@@ -10,27 +10,24 @@ import LoginAD from "./components/pages/LoginAD";
 import { Routes, Route } from "react-router-dom";
 import ContainerFT from "./components/UI/ContainerFT";
 import ShowRoomFT from "./components/pages/ShowRoomFT";
-import { Header } from "antd/es/layout/layout";
 import UploadAD from "./components/pages/UploadAD";
 import ReviewSub from "./components/pages/ReviewSubAD";
 import NewProductPageAD from "./components/pages/NewProductPageAD";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Routes>
         <Route
-          path='/'
+          path="/" // 메인
           element={
             <>
               <HeaderFT></HeaderFT>
               <Swipe />
               <ContainerFT>
-                <MainBestProductsFT></MainBestProductsFT>
+                <MainLongTabFT></MainLongTabFT>
                 <MainNewProductsFT></MainNewProductsFT>
-              </ContainerFT>
-              <MainLongTabFT></MainLongTabFT>
-              <ContainerFT>
+                <MainBestProductsFT></MainBestProductsFT>
                 <ShowRoomFT></ShowRoomFT>
                 <ReviewsFT></ReviewsFT>
               </ContainerFT>
@@ -38,9 +35,9 @@ function App() {
             </>
           }
         />
-        
+
         <Route
-          path='/login'
+          path="/login" // 로그인
           element={
             <>
               <ContainerFT>
@@ -52,27 +49,28 @@ function App() {
             </>
           }
         />
-        <Route path='/upload'
-        element={
-          <>
-          <ContainerFT>
-            <HeaderFT/>
-            <div style={{maxWidth:500, margin:"0 auto", paddingTop:200, paddingBottom:200}}>
-            <UploadAD/>
-            </div>
-            <FooterFT/>
-          </ContainerFT>
-          </>
-        }>
-        </Route>
         <Route
-          path='/ReviewSub'
+          path="/product/upload" // 새 상품 올리기
           element={
             <>
               <ContainerFT>
-                <HeaderFT/>
-                  <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
-                  <ReviewSub/>
+                <HeaderFT />
+                <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
+                  <UploadAD />
+                </div>
+                <FooterFT />
+              </ContainerFT>
+            </>
+          }
+        ></Route>
+        <Route
+          path="/review/upload" // 리뷰 올리기
+          element={
+            <>
+              <ContainerFT>
+                <HeaderFT />
+                <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
+                  <ReviewSub />
                 </div>
               </ContainerFT>
               <FooterFT></FooterFT>
@@ -80,22 +78,22 @@ function App() {
           }
         />
       </Routes>
-      <Routes>    
-      <Route path='/newproduct'
-        element={
-          <>
-            <HeaderFT/>
-          <ContainerFT>
-            <div style={{ margin:"0 auto", paddingTop:100, paddingBottom:100}}>
-            <NewProductPageAD/>
-            </div>
-          </ContainerFT>
-            <FooterFT/>
-          </>
-        }></Route>
-        </Routes>
-        
-      
+      <Routes>
+        <Route
+          path="/product/new" // 새 상품 리스트
+          element={
+            <>
+              <HeaderFT />
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <NewProductPageAD />
+                </div>
+              </ContainerFT>
+              <FooterFT />
+            </>
+          }
+        ></Route>
+      </Routes>
     </div>
   );
 }
