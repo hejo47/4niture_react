@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./ProducListFT.module.css";
 import nh_test from "../../img/nh_test.jpg";
+//import {API_URL} from "../config/Constans";
 
 const NewProductList = [
   {

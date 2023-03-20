@@ -1,0 +1,1 @@
+export const API_URL="https://port-0-furnitureserver-nx562olfdt8jh2.sel3.cloudtype.app";
