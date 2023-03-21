@@ -12,12 +12,9 @@ containerAD
 
 개인 브랜치 - 디벨롭 - 메인
 
-clone 후 npm 순서
+# 클론 후 설치
 
-npm i
-
-npm i react-router-dom
-
-npm i antd
-
-npm install swiper
+1.  npm i
+2.  npm i react-router-dom
+3.  npm i antd
+4.  npm install swiper
