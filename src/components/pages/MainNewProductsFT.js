@@ -12,8 +12,8 @@ const MainNewProductsFT=()=>{
         <ContainerFT>
             <h3>New Products</h3>
             <div className={classes.productIntroduction}>
-                <ProductThemeFT theme="신상템" new="New"/>
-                <ProductListFT dataname="NewProductList"/>
+                <ProductThemeFT theme="신상템" option="New"/>
+                <ProductListFT dataname="new"/>
 
             </div>
         </ContainerFT>

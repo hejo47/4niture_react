@@ -86,7 +86,7 @@ function App() {
               <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  <NewProductPageAD />
+                  <NewProductPageAD />{/* 여기가 도상님컴포넌트넣는곳 */}
                 </div>
               </ContainerFT>
               <FooterFT />
