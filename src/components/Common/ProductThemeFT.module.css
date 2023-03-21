@@ -12,6 +12,9 @@
     object-fit: cover;
     filter: invert(0.2);    
 }
+.productTheme>img:hover{
+    transform: scale();
+}
 .productTheme>div{
     position: absolute;
     top:40%;
