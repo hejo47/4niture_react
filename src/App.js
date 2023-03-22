@@ -13,6 +13,7 @@ import ShowRoomFT from "./components/pages/ShowRoomFT";
 import UploadAD from "./components/pages/UploadAD";
 import ReviewSub from "./components/pages/ReviewSubAD";
 import NewProductPageAD from "./components/pages/NewProductPageAD";
+import ProductDetail from "./components/pages/ProductDetailAD";
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
             </>
           }
         />
+
+        <Route path="/Products/:id" element={<ProductDetail />}></Route>
 
         <Route
           path="/login" // 로그인
@@ -86,7 +89,8 @@ function App() {
               <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  <NewProductPageAD />{/* 여기가 도상님컴포넌트넣는곳 */}
+                  <NewProductPageAD />
+                  {/* 여기가 도상님컴포넌트넣는곳 */}
                 </div>
               </ContainerFT>
               <FooterFT />
