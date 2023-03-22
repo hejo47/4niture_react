@@ -18,3 +18,9 @@ containerAD
 2.  npm i react-router-dom
 3.  npm i antd
 4.  npm install swiper
+5.  npm i axios
+
+# Git 자격증명관리자 계정삭제,
+
+1. git config --global user.name 자기이름
+1. git config --global user.email 자기메일
