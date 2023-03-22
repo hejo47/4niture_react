@@ -9,9 +9,7 @@ const ProductThemeFT = (props) => {
         <img src={`/images/main${props.option}.jpg`} alt='' />
         <div>
           <span>4월의 {props.theme}을 만나보세요</span>
-          <p>
-            <Link to={"/product/upload"}>4niture's {props.new} item</Link>
-          </p>
+          <p>4niture's {props.new} item</p>
         </div>
       </div>
     </>

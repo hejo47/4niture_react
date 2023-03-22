@@ -12,7 +12,7 @@ import ContainerFT from "./components/UI/ContainerFT";
 import ShowRoomFT from "./components/pages/ShowRoomFT";
 import UploadAD from "./components/pages/UploadAD";
 import ReviewSub from "./components/pages/ReviewSubAD";
-import NewProductPageAD from "./components/pages/NewProductPageAD";
+import TotalProductPageAD from "./components/pages/TotalProductsAD";
 
 function App() {
   return (
@@ -77,8 +77,6 @@ function App() {
             </>
           }
         />
-      </Routes>
-      <Routes>
         <Route
           path="/product/new" // 새 상품 리스트
           element={
@@ -86,13 +84,27 @@ function App() {
               <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  <NewProductPageAD />{/* 여기가 도상님컴포넌트넣는곳 */}
+                  {/* <NewProductPageAD />여기가 도상님컴포넌트넣는곳 */}
                 </div>
               </ContainerFT>
               <FooterFT />
             </>
           }
-        ></Route>
+        />
+        <Route
+          path="/product" // 전체 상품 리스트(장바구니에 링크걸어둠)
+          element={
+            <>
+              <HeaderFT />
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <TotalProductPageAD/>
+                </div>
+              </ContainerFT>
+              <FooterFT />
+            </>
+          }
+        />
       </Routes>
     </div>
   );
