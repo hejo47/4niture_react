@@ -2,6 +2,7 @@ import React from "react";
 import ContainerFT from "../UI/ContainerFT"
 import ProductThemeFT from "../Common/ProductThemeFT"
 import ProductListFT from "../Common/ProductListFT"
+// import {API_URL} from "../config/Constans"
 
 import classes from "./MainNewProductsFT.module.css"
 
@@ -11,8 +12,8 @@ const MainNewProductsFT=()=>{
         <ContainerFT>
             <h3>New Products</h3>
             <div className={classes.productIntroduction}>
-                <ProductThemeFT theme="신상템" new="New"/>
-                <ProductListFT dataname="NewProductList"/>
+                <ProductThemeFT theme="신상템" option="New"/>
+                <ProductListFT dataname="new"/>
 
             </div>
         </ContainerFT>

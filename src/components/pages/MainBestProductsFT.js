@@ -10,8 +10,8 @@ const MainBestProductsFT=()=>{
         <ContainerFT>
             <h3>Best Products</h3>
             <div className={classes.productIntroduction}>
-                <ProductListFT dataname="BestProductList"/>
-                <ProductThemeFT theme="베스트템" new="Best"/>
+                <ProductListFT dataname="best"/>
+                <ProductThemeFT theme="베스트템" option="Best"/>
             </div>
         </ContainerFT>
        
