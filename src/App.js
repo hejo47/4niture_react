@@ -13,13 +13,14 @@ import ShowRoomFT from "./components/pages/ShowRoomFT";
 import UploadAD from "./components/pages/UploadAD";
 import ReviewSub from "./components/pages/ReviewSubAD";
 import NewProductPageAD from "./components/pages/NewProductPageAD";
+import CateProductList from "./components/pages/CateProductList";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Routes>
         <Route
-          path="/" // 메인
+          path='/' // 메인
           element={
             <>
               <HeaderFT></HeaderFT>
@@ -39,7 +40,7 @@ function App() {
         />
 
         <Route
-          path="/login" // 로그인
+          path='/login' // 로그인
           element={
             <>
               <ContainerFT>
@@ -52,7 +53,7 @@ function App() {
           }
         />
         <Route
-          path="/product/upload" // 새 상품 올리기
+          path='/product/upload' // 새 상품 올리기
           element={
             <>
               <ContainerFT>
@@ -66,7 +67,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/review/upload" // 리뷰 올리기
+          path='/review/upload' // 리뷰 올리기
           element={
             <>
               <ContainerFT>
@@ -82,13 +83,31 @@ function App() {
       </Routes>
       <Routes>
         <Route
-          path="/product/new" // 새 상품 리스트
+          path='/product/new' // 새 상품 리스트
           element={
             <>
               <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  <NewProductPageAD />{/* 여기가 도상님컴포넌트넣는곳 */}
+                  <NewProductPageAD />
+                  {/* 여기가 도상님컴포넌트넣는곳 */}
+                </div>
+              </ContainerFT>
+              <FooterFT />
+            </>
+          }
+        ></Route>
+      </Routes>
+
+      <Routes>
+        <Route
+          path='/products/category/storage/*' // 새 상품 리스트
+          element={
+            <>
+              <HeaderFT />
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <CateProductList />
                 </div>
               </ContainerFT>
               <FooterFT />

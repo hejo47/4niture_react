@@ -1,53 +1,29 @@
-import React from "react";
 import MainLongTabItemFT from "./MainLongTabItemFT";
 import classes from "./MainLongTabFT.module.css";
+
 const categoryList = [
   {
-    name: "침대",
+    name: "storage",
     img: "",
   },
   {
-    name: "소파",
+    name: "table",
     img: "",
   },
   {
-    name: "의자",
+    name: "chair",
     img: "",
   },
   {
-    name: "수납",
+    name: "bedroom",
     img: "",
   },
   {
-    name: "주방용품",
+    name: "kitchen",
     img: "",
   },
   {
-    name: "푸드",
-    img: "",
-  },
-  {
-    name: "캠핑",
-    img: "",
-  },
-  {
-    name: "홈데코/조명",
-    img: "",
-  },
-  {
-    name: "패브릭",
-    img: "",
-  },
-  {
-    name: "반려동물",
-    img: "",
-  },
-  {
-    name: "키즈",
-    img: "",
-  },
-  {
-    name: "가전",
+    name: "homedeco",
     img: "",
   },
 ];
