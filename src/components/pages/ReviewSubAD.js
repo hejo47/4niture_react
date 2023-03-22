@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { API_URL } from "../../config/constants.js";
 import { Button, ConfigProvider, Form, Input, Upload, Divider, message } from "antd";
 import styles from "./ReviewSubAD.module.css";
-import { PlusOutlined } from "@ant-design/icons";
 import axios from "axios";
-import { API_URL } from "../../config/constants";
+
 
 const { TextArea } = Input;
 
@@ -62,7 +62,7 @@ const ReviewSub = () => {
                  <img id={styles.uploadImg} src={`${API_URL}/${imageUrl}`} alt="" />
                   ) : (
                   <div>
-                    <img src="/images/icons/camera.png" alt="" />
+                    <img src="../images/icons/camera.png" alt="" />
                     <span>사진을올려주세요.</span>
                     <span>jpg | png</span>
                   </div>
@@ -77,7 +77,7 @@ const ReviewSub = () => {
           </Form.Item>
           <Divider></Divider>
 
-          <Form.Item label={<div className="upload-label">글쓰기</div>} name="description" rules={[{ required: true, message: "텍스트를 입력해주세요." }]}>
+          <Form.Item label={<div className="upload-label">글쓰기</div>} name="desc" rules={[{ required: true, message: "텍스트를 입력해주세요." }]}>
             <TextArea className={styles.Textarea} size="large" id="product-description" showCount maxLength={300} placeholder="텍스트를 작성해주세요"></TextArea>
           </Form.Item>
           <Form.Item>
