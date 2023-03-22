@@ -81,6 +81,21 @@ function App() {
             </>
           }
         />
+          <Route
+          path="/review/reviewPage" // 리뷰페이지
+          element={
+            <>
+              <HeaderFT />
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <ReviewGetAD />
+                 
+                </div>
+              </ContainerFT>
+              <FooterFT />
+            </>
+          }
+        ></Route>
       </Routes>
       <Routes>
         <Route
@@ -99,23 +114,9 @@ function App() {
           }
         ></Route>
       </Routes>
-      <Routes>
-        <Route
-          path="/review/reviewpage" // 새 상품 리스트
-          element={
-            <>
-              <HeaderFT />
-              <ContainerFT>
-                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  <ReviewGetAD />
-                  {/* 여기가 도상님컴포넌트넣는곳 */}
-                </div>
-              </ContainerFT>
-              <FooterFT />
-            </>
-          }
-        ></Route>
-      </Routes>
+      
+      
+      
     </div>
   );
 }

@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 //견본파일입니다. 
 //상세페이지 링크 클릭해야합니다.
 import React, { useState, useEffect } from "react";
@@ -18,7 +19,7 @@ const ReviewGetAD = () => {
         axios
           .get(`${API_URL}/reviews`)
           .then(function (result) {
-            const reviews = result.data.review;
+            const reviews = result.data.reviews;
             setReviews(reviews);
           })
           .catch(function (error) {
@@ -27,7 +28,7 @@ const ReviewGetAD = () => {
         }, []);
     return (
     <>
-      <h2>New Products</h2>
+      <h2>Reviews</h2>
       <ConfigProvider
         theme={{
           token: {
@@ -39,14 +40,14 @@ const ReviewGetAD = () => {
           
               {reviews.map((review,idx) => {
               
-                <div key={idx}>
+                
                   return (
                     <>
                       <Routes>
-                        {<Route path='/review/upload' element={<ReviewSub />}></Route> }
+                        { <Route path='/review/upload' element={<ReviewSub />}></Route>  }
                       </Routes>
-                      <Col span={6}>
-                        <Card hoverable style={{ width: 240 }} cover={<img alt='example' src={`${API_URL}/${review.imageUrl}`} />}>
+                      <Col span={6} key={idx}>
+                        <Card hoverable style={{ width: 240 }} cover={<img alt="review-img" src={`${API_URL}/${review.imageUrl}`} />}>
                           <Link to='/review/upload'>
                             <Meta title={review.name} description={review.desc} />
                           </Link>
@@ -54,7 +55,7 @@ const ReviewGetAD = () => {
                       </Col>
                     </>
                   );
-                </div>
+                
               })}
           
         </Row>
