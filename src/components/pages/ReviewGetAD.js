@@ -16,7 +16,7 @@ const ReviewGetAD = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
         axios
-          .get(`${API_URL}/review/upload`)
+          .get(`${API_URL}/reviews`)
           .then(function (result) {
             const reviews = result.data.review;
             setReviews(reviews);
@@ -37,22 +37,24 @@ const ReviewGetAD = () => {
       >
         <Row gutter={12} >
           
-              {reviews.map((product,idx) => {
+              {reviews.map((review,idx) => {
               
-                return (
-                  <>
-                    <Routes>
-                      {<Route path='/review/upload' element={<ReviewSub />}></Route> }
-                    </Routes>
-                    <Col span={6}>
-                      <Card hoverable style={{ width: 240 }} cover={<img alt='example' src={`${API_URL}/${product.imageUrl}`} />}>
-                        <Link to='/review/upload'>
-                          <Meta title={product.name} description={product.desc} />
-                        </Link>
-                      </Card>
-                    </Col>
-                  </>
-                );
+                <div key={idx}>
+                  return (
+                    <>
+                      <Routes>
+                        {<Route path='/review/upload' element={<ReviewSub />}></Route> }
+                      </Routes>
+                      <Col span={6}>
+                        <Card hoverable style={{ width: 240 }} cover={<img alt='example' src={`${API_URL}/${review.imageUrl}`} />}>
+                          <Link to='/review/upload'>
+                            <Meta title={review.name} description={review.desc} />
+                          </Link>
+                        </Card>
+                      </Col>
+                    </>
+                  );
+                </div>
               })}
           
         </Row>
