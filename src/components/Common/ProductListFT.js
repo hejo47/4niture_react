@@ -25,7 +25,7 @@ const ProductListFT = (props) => {
       {products.map((products, idx) => {
         let { id, name, price, imageUrl } = products;
         return (
-          <Link to={`/products/${id}`}>
+          <Link to={`${API_URL}/products/${id}`}>
             <div className={classes.product}>
               <div className={classes.productImg}>
                 <img src={`${API_URL}/${imageUrl}`} alt={`${name}사진`} />
