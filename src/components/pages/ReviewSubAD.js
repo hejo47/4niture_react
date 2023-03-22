@@ -14,7 +14,7 @@ const ReviewSub = () => {
   const onFinish = function (val) {
     console.log(val);
     axios
-      .post(`${API_URL}/products`, {
+      .post(`${API_URL}/reviews`, {
         name: val.name,
         imageUrl: imageUrl,
         desc:val.desc,
