@@ -16,9 +16,8 @@
     object-fit: contain;/*세로를 채움 */
   }
   #uploadImg > img {
-    position: absolute;
-    top: 70%;
-    left: 20%;
+    
+    
     width: 50px;
 
   }
