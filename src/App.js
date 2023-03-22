@@ -13,6 +13,8 @@ import ShowRoomFT from "./components/pages/ShowRoomFT";
 import UploadAD from "./components/pages/UploadAD";
 import ReviewSub from "./components/pages/ReviewSubAD";
 import TotalProductPageAD from "./components/pages/TotalProductsAD";
+import ProductDetail from "./components/pages/ProductDetailAD";
+import ReviewGetAD from "./components/pages/ReviewGetAD";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
             </>
           }
         />
+
+        <Route path="/Products/:id" element={<ProductDetail />}></Route>
 
         <Route
           path="/login" // 로그인
@@ -84,7 +88,25 @@ function App() {
               <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  {/* <NewProductPageAD />여기가 도상님컴포넌트넣는곳 */}
+                  {/* <NewProductPageAD />
+                  {/* 여기가 도상님컴포넌트넣는곳 */}
+                </div>
+              </ContainerFT>
+              <FooterFT />
+            </>
+          }
+        ></Route>
+      </Routes>
+      <Routes>
+        <Route
+          path="/review/reviewpage" // 새 상품 리스트
+          element={
+            <>
+              <HeaderFT />
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <ReviewGetAD />
+                  여기가 도상님컴포넌트넣는곳 */}
                 </div>
               </ContainerFT>
               <FooterFT />
