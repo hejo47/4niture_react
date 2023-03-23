@@ -13,7 +13,7 @@ const TotalProductPageAD = () => {
     useEffect(() => {
         axios
         .get(`${API_URL}/products`)
-        .then((result) => {
+        .then((result) => {console.log("이거임",result)
             const items=result.data.product
             setItems(items);
         })
