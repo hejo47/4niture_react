@@ -49,7 +49,8 @@ const ReviewGetAD = () => {
                       <Col span={6} key={idx}>
                         <Card hoverable style={{ width: 240 }} cover={<img alt="review-img" src={`${API_URL}/${review.imageUrl}`} />}>
                           <Link to='/review/upload'>
-                            <Meta title={review.name} description={review.desc} />
+                            <Meta title={review.name}  description={review.productname} />
+                            <Meta description={review.desc} />
                           </Link>
                         </Card>
                       </Col>
