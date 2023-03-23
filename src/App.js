@@ -15,13 +15,14 @@ import ReviewSub from "./components/pages/ReviewSubAD";
 import TotalProductPageAD from "./components/pages/TotalProductsAD";
 import ProductDetail from "./components/pages/ProductDetailAD";
 import ReviewGetAD from "./components/pages/ReviewGetAD";
+import CategoryRoutes from "./components/pages/CategoryRoutes";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Routes>
         <Route
-          path="/" // 메인
+          path='/' // 메인
           element={
             <>
               <HeaderFT></HeaderFT>
@@ -38,10 +39,10 @@ function App() {
           }
         />
 
-        <Route path="/Products/:id" element={<ProductDetail />}></Route>
+        <Route path='/Products/:id' element={<ProductDetail />}></Route>
 
         <Route
-          path="/login" // 로그인
+          path='/login' // 로그인
           element={
             <>
               <ContainerFT>
@@ -54,7 +55,7 @@ function App() {
           }
         />
         <Route
-          path="/product/upload" // 새 상품 올리기
+          path='/product/upload' // 새 상품 올리기
           element={
             <>
               <ContainerFT>
@@ -68,7 +69,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/review/upload" // 리뷰 올리기
+          path='/review/upload' // 리뷰 올리기
           element={
             <>
               <ContainerFT>
@@ -81,8 +82,8 @@ function App() {
             </>
           }
         />
-          <Route
-          path="/review/reviewPage" // 리뷰페이지
+        <Route
+          path='/review/reviewPage' // 리뷰페이지
           element={
             <>
               <HeaderFT />
@@ -96,7 +97,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/product/new" // 새 상품 리스트
+          path='/product/new' // 새 상품 리스트
           element={
             <>
               <HeaderFT />
@@ -111,16 +112,44 @@ function App() {
           }
         ></Route>
         <Route
-          path="/product" // 전체 상품 리스트(장바구니에 링크걸어둠)
+          path='/product' // 전체 상품 리스트(장바구니에 링크걸어둠)
           element={
             <>
               <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  <TotalProductPageAD/>
+                  <TotalProductPageAD />
                 </div>
               </ContainerFT>
               <FooterFT />
+            </>
+          }
+        />
+
+        <Route
+          path='/products/category/all' // 전체 카테고리 상품 리스트
+          element={
+            <>
+              <HeaderFT />
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <TotalProductPageAD />
+                </div>
+              </ContainerFT>
+              <FooterFT />
+            </>
+          }
+        />
+
+        <Route
+          path='/products/category/' // 카테고리 상품 리스트
+          element={
+            <>
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <CategoryRoutes></CategoryRoutes>
+                </div>
+              </ContainerFT>
             </>
           }
         />
