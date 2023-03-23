@@ -146,13 +146,13 @@ function App() {
           element={
             <>
               <ContainerFT>
-                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  <CategoryRoutes></CategoryRoutes>
-                </div>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}></div>
               </ContainerFT>
             </>
           }
         />
+
+        <Route path='products/category/storage' element={<CategoryRoutes></CategoryRoutes>}></Route>
       </Routes>
     </div>
   );
