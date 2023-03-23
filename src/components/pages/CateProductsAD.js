@@ -12,11 +12,6 @@ const TotalProductPageAD = () => {
       .get(`${API_URL}${window.location.pathname}`)
       .then((result) => {
         const products = result.data.product;
-        console.log("hjhjhjhjhj", result.data.product);
-        console.log("info", window.location.pathname);
-        for (let i = 0; i < products.length; i++) {
-          console.log(products[i]);
-        }
         setItems(products);
       })
       .catch((error) => {
