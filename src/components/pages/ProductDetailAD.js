@@ -78,16 +78,19 @@ const ProductDetail = () => {
           <div className={classes.detail_desc}>
             <div className={classes.detail_text}>Description</div>
             {product.desc}
-            <div className={classes.detail_backbutton}>
-              <button
-                onClick={() => {
-                  navigate(-1);
-                }}
-                id="back-btn"
-              >
-                뒤로
-              </button>
+            <div className={classes.detail_subimage}>
+              <img src={`${API_URL}/${product.subimageUrl}`} alt={product.name} />
             </div>
+          </div>
+          <div className={classes.detail_backbutton}>
+            <button
+              onClick={() => {
+                navigate(-1);
+              }}
+              id="back-btn"
+            >
+              뒤로
+            </button>
           </div>
         </div>
         <FooterFT></FooterFT>
