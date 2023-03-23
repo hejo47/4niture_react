@@ -4,7 +4,7 @@ import classes from "./MainLongTabFT.module.css";
 const categoryList = [
   {
     name: "all",
-    img: "",
+    img: "images/all.jpg",
   },
   {
     name: "storage",
