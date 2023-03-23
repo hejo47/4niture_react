@@ -16,6 +16,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  overflow: hidden;
+}
+.circle img {
+  height: 100%;
 }
 .cateItem span {
   width: 100%;
