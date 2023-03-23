@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./ProductThemeFT.module.css";
-import { Link } from "react-router-dom";
 
 const ProductThemeFT = (props) => {
   return (
