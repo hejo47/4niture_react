@@ -25,7 +25,7 @@ const UploadAD = () => {
     })
     .then((result) => {
       console.log(result);
-      navigate('/products')
+      navigate('../product', { replace: true})
     })
     .catch((error) => {
       console.error(error);

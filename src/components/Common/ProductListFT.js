@@ -11,19 +11,17 @@ const ProductListFT = (props) => {
     axios
       .get(`${API_URL}/products/${dataname}`)
       .then((result) => {
-        console.log(result);
         const products = result.data.product;
         setProduct(products);
       })
       .catch((error) => {
-        console.log(error);
       });
   }, []);
 
   return (
     <div className={classes.productList}>
       {products.map((products, idx) => {
-        let { id, name, price, imageUrl } = products;
+        let { id, name, price, imageUrl, size } = products;
         return (
           <Link to={`/products/${id}`}>
             <div className={classes.product}>
@@ -33,7 +31,7 @@ const ProductListFT = (props) => {
               <div className={classes.productDescription}>
                 <p className={classes.productName}>{name}</p>
                 <p className={classes.productPrice}>{price}</p>
-                <p className={classes.reviewNumber}>수정예정{price}</p>
+                <p className={classes.size}>size{size}</p>
               </div>
             </div>
           </Link>
