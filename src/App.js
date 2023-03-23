@@ -141,18 +141,12 @@ function App() {
           }
         />
 
-        <Route
-          path='/products/category/' // 카테고리 상품 리스트
-          element={
-            <>
-              <ContainerFT>
-                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}></div>
-              </ContainerFT>
-            </>
-          }
-        />
-
         <Route path='products/category/storage' element={<CategoryRoutes></CategoryRoutes>}></Route>
+        <Route path='products/category/table' element={<CategoryRoutes></CategoryRoutes>}></Route>
+        <Route path='products/category/chair' element={<CategoryRoutes></CategoryRoutes>}></Route>
+        <Route path='products/category/bedroom' element={<CategoryRoutes></CategoryRoutes>}></Route>
+        <Route path='products/category/kitchen' element={<CategoryRoutes></CategoryRoutes>}></Route>
+        <Route path='products/category/homedeco' element={<CategoryRoutes></CategoryRoutes>}></Route>
       </Routes>
     </div>
   );

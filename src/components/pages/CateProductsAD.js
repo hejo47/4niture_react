@@ -5,15 +5,15 @@ import { Card, ConfigProvider, Col, Row } from "antd";
 import axios from "axios";
 import { API_URL } from "../../config/constants";
 const { Meta } = Card;
-const TotalProductPageAD = () => {
+const TotalProductPageAD = (props) => {
   const [items, setItems] = useState([]);
   useEffect(() => {
     axios
-      .get(`${API_URL}/products/category/storage`)
+      .get(`${API_URL}${window.location.pathname}`)
       .then((result) => {
         const products = result.data.product;
         console.log("hjhjhjhjhj", result.data.product);
-
+        console.log("info", window.location.pathname);
         for (let i = 0; i < products.length; i++) {
           console.log(products[i]);
         }
