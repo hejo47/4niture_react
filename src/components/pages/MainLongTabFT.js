@@ -8,27 +8,27 @@ const categoryList = [
   },
   {
     name: "storage",
-    img: "",
+    img: "images/storage.jpg",
   },
   {
     name: "table",
-    img: "",
+    img: "images/table.jpg",
   },
   {
     name: "chair",
-    img: "",
+    img: "images/chair.jpg",
   },
   {
     name: "bedroom",
-    img: "",
+    img: "images/bedroom.jpg",
   },
   {
     name: "kitchen",
-    img: "",
+    img: "images/kitchen.jpg",
   },
   {
     name: "homedeco",
-    img: "",
+    img: "images/homedeco.jpg",
   },
 ];
 const MainLongTabFT = () => {
