@@ -79,6 +79,9 @@ const ProductDetail = () => {
             <div className={classes.detail_text}>Description</div>
             {product.desc}
             <div className={classes.detail_backbutton}>
+              <div className={classes.detail_subimage}>
+                <img src={`${API_URL}/${product.subimageUrl}`} alt={product.name} />
+              </div>
               <button
                 onClick={() => {
                   navigate(-1);

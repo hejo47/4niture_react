@@ -54,3 +54,6 @@
   font-weight: bold;
   padding: 10px;
 }
+.detail_subimage img {
+  width: 100%;
+}

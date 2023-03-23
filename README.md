@@ -24,3 +24,7 @@ containerAD
 
 1. git config --global user.name 자기이름
 1. git config --global user.email 자기메일
+
+# Server Git
+
+https://github.com/naehyun25/4niture_server.git
