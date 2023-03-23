@@ -8,6 +8,7 @@
   justify-content: space-between;
 }
 .detail_image {
+  display: flex;
   width: 48%;
 }
 .detail_contentbox {
@@ -18,6 +19,11 @@
   font-size: 1rem;
   font-weight: bold;
   color: navy;
+}
+.detail_subimage img {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
 }
 .detail_image img {
   width: 100%;

@@ -15,7 +15,9 @@ import ReviewSub from "./components/pages/ReviewSubAD";
 import TotalProductPageAD from "./components/pages/TotalProductsAD";
 import ProductDetail from "./components/pages/ProductDetailAD";
 import ReviewGetAD from "./components/pages/ReviewGetAD";
+import TopBtn from "./components/Common/TopBtnAD";
 import CategoryRoutes from "./components/pages/CategoryRoutes";
+
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
                 <MainBestProductsFT></MainBestProductsFT>
                 <ShowRoomFT></ShowRoomFT>
                 <ReviewsFT></ReviewsFT>
+                <TopBtn/>
               </ContainerFT>
               <FooterFT></FooterFT>
             </>
