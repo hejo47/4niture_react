@@ -13,7 +13,6 @@ const UploadAD = () => {
   const navigate = useNavigate();
 
   const onFinish = (value)=>{
-    console.log(value)
     axios
     .post(`${API_URL}/products`,{
       name:value.name,
