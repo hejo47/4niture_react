@@ -4,7 +4,6 @@ import { Button, ConfigProvider, Form, Input, Upload, Divider, message } from "a
 import styles from "./ReviewSubAD.module.css";
 import axios from "axios";
 
-
 const { TextArea } = Input;
 
 const ReviewSub = () => {
@@ -16,9 +15,9 @@ const ReviewSub = () => {
     axios
       .post(`${API_URL}/reviews`, {
         name: val.name,
-        productname:val.productname,
+        productname: val.productname,
         imageUrl: imageUrl,
-        desc:val.desc,
+        desc: val.desc,
       })
       .then((result) => {
         console.log(result);
@@ -60,12 +59,12 @@ const ReviewSub = () => {
             <div id={styles.uploadImg}>
               <Upload name="image" action={`${API_URL}/image`} listType="picture" showUploadList={false} onChange={onChangeImage}>
                 {imageUrl ? (
-                 <img id={styles.uploadImg} src={`${API_URL}/${imageUrl}`} alt="" />
-                  ) : (
-                  <div>
+                  <img id={styles.uploadImg} src={`${API_URL}/${imageUrl}`} alt="" />
+                ) : (
+                  <div id={styles.imguploadbox}>
                     <img src="../images/icons/camera.png" alt="" />
-                    <span>사진을올려주세요.</span>
-                    <span>jpg | png</span>
+                    <span style={{display:"block",textAlign:"center"}}>사진을올려주세요.</span>
+                    <span style={{display:"block",textAlign:"center"}}>jpg | png</span>
                   </div>
                 )}
               </Upload>

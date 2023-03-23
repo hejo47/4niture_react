@@ -38,16 +38,16 @@ const Swipe = () => {
       
     >
       <SwiperSlide>
-        <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src={Banner1} alt="의자1" />
+        <div className={styles.Textbox} ><h2>Banner1 Textbox</h2></div>
+        <div class={styles.imgbox}><img src={Banner1} alt="의자1" /></div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src={Banner2} alt="" />
+        <div className={styles.Textbox} ><h2>Banner2 Textbox</h2></div>
+        <div class={styles.imgbox}><img src={Banner2} alt="" /></div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.Textbox} ><h2>Textbox</h2></div>
-        <img src={Banner3} alt="의자1" />
+        <div className={styles.Textbox} ><h2>Banner3 Textbox</h2></div>
+        <div class={styles.imgbox}><img src={Banner3} alt="의자1" /></div>
       </SwiperSlide>
     </Swiper>
     </>

@@ -11,7 +11,7 @@
 
 }
 
-img{
+.imgbox>img{
     height: auto;
     width: 100%;
 }

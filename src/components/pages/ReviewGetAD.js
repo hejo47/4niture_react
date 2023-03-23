@@ -38,8 +38,8 @@ const ReviewGetAD = () => {
       >
         <Row gutter={12} >
           
-              {reviews.map((review,idx) => {
-              
+              {reviews.map((review,idx) => {console.log(review)
+                let {name, productname, desc, imageUrl} = review;
                 
                   return (
                     <>
@@ -47,11 +47,11 @@ const ReviewGetAD = () => {
                         { <Route path='/review/upload' element={<ReviewSub />}></Route>  }
                       </Routes>
                       <Col span={6} key={idx}>
-                        <Card hoverable style={{ width: 240 }} cover={<img alt="review-img" src={`${API_URL}/${review.imageUrl}`} />}>
+                        <Card hoverable style={{ width: 240 }} cover={<img alt="review-img" src={`${API_URL}/${imageUrl}`} />}>
                           <Link to='/review/upload'>
-                            <span>작성자:</span><Meta title={review.name}  />
-                            <span>상품명:</span><Meta title={review.productname}  />
-                            <span>리뷰:</span><Meta description={review.desc} />
+                            <span>작성자:</span><Meta title={name}  />
+                            <span>상품명:</span><Meta title={productname}  />
+                            <span>리뷰:</span><Meta description={desc} />
                           </Link>
                         </Card>
                       </Col>
