@@ -5,7 +5,7 @@ import { Card, ConfigProvider, Col, Row } from "antd";
 import axios from "axios";
 import { API_URL } from "../../config/constants";
 const { Meta } = Card;
-const TotalProductPageAD = (props) => {
+const TotalProductPageAD = () => {
   const [items, setItems] = useState([]);
   useEffect(() => {
     axios
