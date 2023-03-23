@@ -16,6 +16,7 @@ const ReviewSub = () => {
     axios
       .post(`${API_URL}/reviews`, {
         name: val.name,
+        productname:val.productname,
         imageUrl: imageUrl,
         desc:val.desc,
       })
@@ -72,7 +73,12 @@ const ReviewSub = () => {
           </Form.Item>
 
           <Divider></Divider>
-          <Form.Item label={<span className="upload-label">상품명</span>} name="name" rules={[{ required: true, message: "후기 글을 써주세요" }]}>
+          <Form.Item label={<span className="upload-label">작성자</span>} name="name" rules={[{ required: true, message: "이름을 입력해주세요" }]}>
+            <Input className={styles.uploadName} placeholder="이름을 입력해주세요" size="large" />
+          </Form.Item>
+          <Divider></Divider>
+
+          <Form.Item label={<span className="upload-label">상품명</span>} name="productname" rules={[{ required: true, message: "상품명을 입력해주세요" }]}>
             <Input className={styles.uploadName} placeholder="상품명을 입력해주세요" size="large" />
           </Form.Item>
           <Divider></Divider>
