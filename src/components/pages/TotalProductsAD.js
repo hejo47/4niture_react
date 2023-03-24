@@ -34,7 +34,7 @@ const TotalProductPageAD = () => {
       >
         <Row gutter={12}>
           {items.map((item,idx) => {
-            let { name, price, imageUrl } = item;
+            let { id, name, price, imageUrl } = item;
             return (
                 <Col span={6}>
                   {item.soldout ===1?
@@ -43,7 +43,7 @@ const TotalProductPageAD = () => {
                 null  
                 }
                   <Card hoverable style={{ width: 240 }} cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
-                    <Link to='/product/:id'>
+                    <Link to={`/products/${id}`}>
                       <Meta title={name} description={price} />
                     </Link>
                   </Card>

@@ -41,11 +41,13 @@ const UploadAD = () => {
       }
       if (result.file.status === "done") {
         const firstImg=fileArr[0].response.imageUrl
-        const secondImg=fileArr[1].response.imageUrl
-        fileArr.length>1 ?
-        setImageUrl([firstImg, secondImg])
-        :
-        setImageUrl([firstImg]);
+        
+        if(fileArr.length>1){
+          let secondImg=fileArr[1].response.imageUrl
+          setImageUrl([firstImg, secondImg])
+        }else{
+          setImageUrl([firstImg,""]);
+        }
       }else if(result.file.status ==="error"){
         alert("파일 전송에 실패했습니다.")
       }
