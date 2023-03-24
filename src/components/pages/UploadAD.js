@@ -94,11 +94,11 @@ const UploadAD = () => {
           <TextArea  rows={4}/>
         </Form.Item>
         <Form.Item label="Upload" valuePropName="image">
-          <Upload name="image" action={`${API_URL}/image`} listType="picture-card"
+          <Upload name="image" action={`${API_URL}/image`} listType="picture-card" maxCount={2}
           onChange={pathImage}>
             <div>
               <PlusOutlined />
-              <div style={{ marginTop: 8 }}>이미지업로드</div>
+              <div style={{ marginTop: 8 }}>이미지업로드 (2개까지가능합니다.)</div>
             </div>
           </Upload>
         </Form.Item>
