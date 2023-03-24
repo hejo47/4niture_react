@@ -19,11 +19,11 @@ const UploadAD = () => {
       price:value.price,
       category:value.category,
       size:value.size,
-      imageUrl:imageUrl,
+      imageUrl:imageUrl[0],
+      subimageUrl:imageUrl[1],
       desc:value.desc
     })
     .then((result) => {
-      console.log(result);
       navigate('../product', { replace: true})
     })
     .catch((error) => {
@@ -34,18 +34,21 @@ const UploadAD = () => {
   
   
   const pathImage =(result) => {
-    console.log(result)
-    if (result.file.status === "uploading") {
-			return;
-		}
-		if (result.file.status === "done") {
-			const response = result.file.response;
-      console.log(response)
-			const imageUrl = response.imageUrl;
-			setImageUrl(imageUrl);
-		}else if(result.file.status ==="error"){
-			alert("파일 전송에 실패했습니다.")
-		}
+    const fileArr=result.fileList
+
+      if (result.file.status === "uploading") {
+        return;
+      }
+      if (result.file.status === "done") {
+        const firstImg=fileArr[0].response.imageUrl
+        const secondImg=fileArr[1].response.imageUrl
+        fileArr.length>1 ?
+        setImageUrl([firstImg, secondImg])
+        :
+        setImageUrl([firstImg]);
+      }else if(result.file.status ==="error"){
+        alert("파일 전송에 실패했습니다.")
+      }
   }
 
     return(
