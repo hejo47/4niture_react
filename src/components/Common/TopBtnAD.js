@@ -1,5 +1,5 @@
 import React from "react";
-import { ToTopOutlined, CameraOutlined, MenuOutlined } from "@ant-design/icons";
+import { ToTopOutlined, CameraOutlined, MenuOutlined,WechatOutlined  } from "@ant-design/icons";
 import { ConfigProvider, FloatButton } from "antd";
 import { Link } from "react-router-dom";
 
@@ -20,6 +20,11 @@ const TopBtn = () => (
         }}
         icon={<MenuOutlined />}
       >
+        <div style={{marginBottom:"15px"}}>
+            <Link to="/review/reviewpage">
+              <FloatButton icon={<WechatOutlined />} />
+            </Link>
+        </div>
         <div style={{marginBottom:"15px"}}>
             <Link to="/review/upload">
               <FloatButton icon={<CameraOutlined />} />

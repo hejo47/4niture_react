@@ -82,6 +82,7 @@ function App() {
                 </div>
               </ContainerFT>
               <FooterFT></FooterFT>
+              <TopBtn/>
             </>
           }
         />
@@ -96,6 +97,7 @@ function App() {
                 </div>
               </ContainerFT>
               <FooterFT />
+              <TopBtn/>
             </>
           }
         ></Route>

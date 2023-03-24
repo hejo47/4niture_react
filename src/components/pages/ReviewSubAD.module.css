@@ -15,12 +15,7 @@
     margin-left: 16px;
     object-fit: contain;/*세로를 채움 */
   }
-  #uploadImg > img {
-    
-    
-    width: 50px;
-
-  }
+ 
   #uploadImg > span {
     font-size: 14px;
     color: rgb(195, 194, 204);
@@ -42,5 +37,6 @@
   background: rgb(75, 130, 211);
   color: white;
  }
+ 
 
  
