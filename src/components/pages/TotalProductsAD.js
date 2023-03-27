@@ -16,7 +16,6 @@ const TotalProductPageAD = () => {
         .then((result) => {
             const products=result.data.products
             setItems(products)
-            console.log("이거임",products);
         })
         .catch((error) => {
             console.log(error)
@@ -37,16 +36,18 @@ const TotalProductPageAD = () => {
           {items.map((item,idx) => {
             let { name, price, imageUrl } = item;
             return (
-              <>
                 <Col span={6}>
+                  {item.soldout ===1?
+                <div><p>품절</p></div>
+                :
+                null  
+                }
                   <Card hoverable style={{ width: 240 }} cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
-                    {console.log(imageUrl, name, price)}
                     <Link to='/product/:id'>
                       <Meta title={name} description={price} />
                     </Link>
                   </Card>
                 </Col>
-              </>
             );
           })}
         </Row>
