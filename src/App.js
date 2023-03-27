@@ -18,7 +18,6 @@ import ReviewGetAD from "./components/pages/ReviewGetAD";
 import TopBtn from "./components/Common/TopBtnAD";
 import CategoryRoutes from "./components/pages/CategoryRoutes";
 
-
 function App() {
   return (
     <div className='App'>
@@ -30,12 +29,14 @@ function App() {
               <HeaderFT></HeaderFT>
               <Swipe />
               <ContainerFT>
-                <MainLongTabFT></MainLongTabFT>
                 <MainNewProductsFT></MainNewProductsFT>
                 <MainBestProductsFT></MainBestProductsFT>
+              </ContainerFT>
+              <MainLongTabFT></MainLongTabFT>
+              <ContainerFT>
                 <ShowRoomFT></ShowRoomFT>
                 <ReviewsFT></ReviewsFT>
-                <TopBtn/>
+                <TopBtn />
               </ContainerFT>
               <FooterFT></FooterFT>
             </>
