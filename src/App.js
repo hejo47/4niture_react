@@ -21,12 +21,13 @@ import CategoryRoutes from "./components/pages/CategoryRoutes";
 function App() {
   return (
     <div className='App'>
+      <HeaderFT></HeaderFT>
+
       <Routes>
         <Route
           path='/' // 메인
           element={
             <>
-              <HeaderFT></HeaderFT>
               <Swipe />
               <ContainerFT>
                 <MainNewProductsFT></MainNewProductsFT>
@@ -38,7 +39,6 @@ function App() {
                 <ReviewsFT></ReviewsFT>
                 <TopBtn />
               </ContainerFT>
-              <FooterFT></FooterFT>
             </>
           }
         />
@@ -54,7 +54,6 @@ function App() {
                   <LoginAD></LoginAD>
                 </div>
               </ContainerFT>
-              <FooterFT></FooterFT>
             </>
           }
         />
@@ -63,11 +62,9 @@ function App() {
           element={
             <>
               <ContainerFT>
-                <HeaderFT />
                 <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
                   <UploadAD />
                 </div>
-                <FooterFT />
               </ContainerFT>
             </>
           }
@@ -82,8 +79,7 @@ function App() {
                   <ReviewSub />
                 </div>
               </ContainerFT>
-              <FooterFT></FooterFT>
-              <TopBtn/>
+              <TopBtn />
             </>
           }
         />
@@ -91,14 +87,12 @@ function App() {
           path='/review/reviewPage' // 리뷰페이지
           element={
             <>
-              <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
                   <ReviewGetAD />
                 </div>
               </ContainerFT>
-              <FooterFT />
-              <TopBtn/>
+              <TopBtn />
             </>
           }
         ></Route>
@@ -106,14 +100,12 @@ function App() {
           path='/product/new' // 새 상품 리스트
           element={
             <>
-              <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
                   {/* <NewProductPageAD />
                   {/* 여기가 도상님컴포넌트넣는곳 */}
                 </div>
               </ContainerFT>
-              <FooterFT />
             </>
           }
         ></Route>
@@ -121,13 +113,11 @@ function App() {
           path='/product' // 전체 상품 리스트(장바구니에 링크걸어둠)
           element={
             <>
-              <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
                   <TotalProductPageAD />
                 </div>
               </ContainerFT>
-              <FooterFT />
             </>
           }
         />
@@ -136,13 +126,11 @@ function App() {
           path='/products/category/all' // 전체 카테고리 상품 리스트
           element={
             <>
-              <HeaderFT />
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
                   <TotalProductPageAD />
                 </div>
               </ContainerFT>
-              <FooterFT />
             </>
           }
         />
@@ -154,6 +142,7 @@ function App() {
         <Route path='products/category/kitchen' element={<CategoryRoutes></CategoryRoutes>}></Route>
         <Route path='products/category/homedeco' element={<CategoryRoutes></CategoryRoutes>}></Route>
       </Routes>
+      <FooterFT></FooterFT>
     </div>
   );
 }
