@@ -1,13 +1,13 @@
 .swiper-button-prev {
   left: 5%;
   margin: 0 auto;
-  color: #333;
+  color: white;
 }
 
 .swiper-button-next {
   right: 5%;
   margin: 0 auto;
-  color: #333;
+  color: white;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,

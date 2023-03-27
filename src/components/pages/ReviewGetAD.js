@@ -33,14 +33,21 @@ const ReviewGetAD = () => {
           },
         }}
       >
-        <Row gutter={12}>
+        <Row
+          gutter={{
+            xs: 8,
+            sm: 16,
+            md: 24,
+            lg: 32,
+          }}
+        >
           {reviews.map((review, idx) => {
             console.log(review);
 
             return (
               <>
                 <Routes>{<Route path="/review/upload" element={<ReviewSub />}></Route>}</Routes>
-                <Col span={6} key={idx} className="reviewCard">
+                <Col span={6} xs={24} md={12} sm={12} lg={6} key={idx} className="reviewCard">
                   <Card hoverable style={{ width: 240 }} cover={<img alt="review-img" src={`${API_URL}/${review.imageUrl}`} />}>
                     <Link to="/review/upload">
                       <span>작성자:</span>
