@@ -33,7 +33,7 @@ const TotalProductPageAD = () => {
         >
           <Row gutter={12}>
             {items.map((item, idx) => {
-              let { name, price, imageUrl } = item;
+              let { name, price, imageUrl, desc } = item;
               return (
                 <div key={idx} style={{ paddingBottom: 50 }}>
                   <Col span={6}>
@@ -41,6 +41,7 @@ const TotalProductPageAD = () => {
                       {console.log(imageUrl, name, price)}
                       <Link to='/product/:id'>
                         <Meta title={name} description={price} />
+                        {/* <p>{desc}</p> */}
                       </Link>
                     </Card>
                   </Col>
