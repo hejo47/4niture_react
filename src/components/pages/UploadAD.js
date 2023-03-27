@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { PlusOutlined } from '@ant-design/icons';
-import {Form, Input, Button, Space, Select, Upload, ConfigProvider,message } from 'antd';
+import {Form, Input, Button, Select, Upload, ConfigProvider,message } from 'antd';
 import {API_URL} from "../../config/constants"
 import axios from "axios";
 
