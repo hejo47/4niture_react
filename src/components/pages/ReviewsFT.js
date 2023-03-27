@@ -43,8 +43,8 @@ const ReviewsFT = () => {
     axios
       .get(`${API_URL}/reviews`)
       .then((result) => {
-        const reviews = result.data.reviews;
-        console.log(result.data.reviews);
+        const reviews = result.data.reviews.slice(0, 4);
+        console.log(reviews);
         setItems(reviews);
       })
       .catch((error) => {
