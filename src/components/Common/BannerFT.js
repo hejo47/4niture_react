@@ -50,7 +50,7 @@ const Swipe = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
         // onSlideChange={() => console.log("slide change")}
-
+    
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
