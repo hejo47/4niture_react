@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { API_URL } from "../../config/constants.js";
 import { Button, ConfigProvider, Form, Input, Upload, Divider, message } from "antd";
 import styles from "./ReviewSubAD.module.css";

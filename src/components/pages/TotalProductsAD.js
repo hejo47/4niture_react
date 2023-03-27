@@ -4,7 +4,6 @@ import { Card, ConfigProvider, Col, Row } from "antd";
 import axios from "axios";
 import { API_URL } from "../../config/constants";
 import classes from "./TotalProductsAD.module.css"
-import { type } from "@testing-library/user-event/dist/type";
 
 const { Meta } = Card;
 
@@ -38,7 +37,7 @@ const TotalProductPageAD = () => {
             let { id, name, price, imageUrl, desc } = item;
             const convertPrice = price.toLocaleString('ko-KR');
             return (
-                <Col span={6}>
+                <Col  md={6} sm={12} xs={16} key={idx}>
                   {item.soldout ===1?
                 <div className={classes.soldoutCover}>
                 SOLD-OUT
@@ -48,7 +47,7 @@ const TotalProductPageAD = () => {
                 }
                   <Card hoverable style={{ width: 240, margin:20}} 
                     cover={<img alt={`${name}사진`} 
-                    src={`${API_URL}/${imageUrl}`} />}
+                      src={`${API_URL}/${imageUrl}`} />}
                     className={classes.itemCard}
                   >
                     <Link to={`/products/${id}`}>

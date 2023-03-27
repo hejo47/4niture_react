@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { API_URL } from "../../config/constants";
-import { Button, message } from "antd";
-import HeaderFT from "../Common/HeaderFT";
-import FooterFT from "../Common/FooterFT";
+import { Button, ConfigProvider, message} from "antd";
 import ContainerFT from "../UI/ContainerFT";
 import classes from "./ProductDetailAD.module.css";
 
@@ -45,7 +43,7 @@ const ProductDetail = () => {
         console.log(error);
       });
   };
-
+  const convertPrice = product.price.toLocaleString('ko-KR');
   return (
     <>
       <ContainerFT>
@@ -58,7 +56,7 @@ const ProductDetail = () => {
               <div className={classes.detail_name}>{product.name}</div>
               <div className={classes.detail_price}>
                 <div className={classes.detail_text}>가격</div>
-                {product.price}￦
+                ￦{convertPrice}
               </div>
               <div className={classes.detail_seller}>
                 <div className={classes.detail_text}>판매자</div>4niture
@@ -68,9 +66,17 @@ const ProductDetail = () => {
                 {product.size}
               </div>
               <div className={classes.paybutton_box}>
-                <Button size='large' type='primary' danger={true} className='payment' onClick={onClickPurchase} disabled={product.soldout === 1}>
-                  즉시결제하기
-                </Button>
+                <ConfigProvider
+                  theme={{
+                    token: {
+                      colorPrimary: "#F25A29",
+                    },
+                  }}
+                >
+                  <Button size='large' type='primary' className='payment' onClick={onClickPurchase} disabled={product.soldout === 1}>
+                    즉시결제하기
+                  </Button>
+                </ConfigProvider>
               </div>
             </div>
           </div>
