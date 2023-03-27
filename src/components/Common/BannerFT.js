@@ -9,13 +9,31 @@ import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
 import styles from "./BannerFT.module.css";
 import "./BannerFT.css";
-import Banner1 from "../../img/banner/SlideMDPick-1.jpg";
-import Banner2 from "../../img/banner/SlideMDPick-2.jpg";
-import Banner3 from "../../img/banner/SlideMDPick-3.jpg";
-import Banner4 from "../../img/banner/SlideMDPick-4.jpg";
-import Banner5 from "../../img/banner/SlideMDPick-5.jpg";
+import Banner1 from "../../img/banner/Slide-4.jpg";
+import Banner2 from "../../img/banner/Slide-5.jpg";
+import Banner3 from "../../img/banner/Slide-6.jpg";
+import Banner4 from "../../img/banner/Slide-7.jpg";
+import springSale from "../../img/banner/Spring-Sale.jpg";
 
 const Swipe = () => {
+  let bannerobj = [
+    {
+      imgUrl: Banner1,
+      desc: "Thousands of deals waiting to be discovered",
+    },
+    {
+      imgUrl: Banner2,
+      desc: "The single best-selling sofa we make, now 20% off",
+    },
+    {
+      imgUrl: Banner3,
+      desc: "Get set for summer with 20% off all-new outdoor sets",
+    },
+    {
+      imgUrl: Banner4,
+      desc: "There’s nothing like leather, especially when it’s 30% off",
+    },
+  ]
   return (
     <>
       <Swiper
@@ -39,31 +57,23 @@ const Swipe = () => {
         }}
         loop
       >
-        <SwiperSlide>
-          <div class={styles.imgbox}>
-            <img src={Banner1} alt="배너1" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div class={styles.imgbox}>
-            <img src={Banner2} alt="배너2" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div class={styles.imgbox}>
-            <img src={Banner3} alt="배너3" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div class={styles.imgbox}>
-            <img src={Banner4} alt="배너4" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div class={styles.imgbox}>
-            <img src={Banner5} alt="배너5" />
-          </div>
-        </SwiperSlide>
+        {bannerobj.map((item) => {
+          return (
+            <SwiperSlide>
+              <div class={styles.imgbox}>
+                <div className={styles.Textbox}>
+                  <div class={styles.springWrap}>
+                    <img src={springSale} alt="스프링세일" />
+                  </div>
+                  <h2>{item.desc}</h2>
+                  <a>Shop The Sale</a>
+                </div>
+                <img src={item.imgUrl} alt="배너" />
+              </div>
+            </SwiperSlide>
+          );
+        })}
+        
       </Swiper>
     </>
   );

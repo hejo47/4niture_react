@@ -26,3 +26,15 @@
   text-overflow: ellipsis;
   word-break: break-all;
 }
+
+@meida screen and (max-width:576px){
+  .ant-card-cover {
+    width: 100%;
+    height: 240px;
+    
+  }
+  .ant-card{
+    margin:0;
+    width: 100%;
+  }
+}

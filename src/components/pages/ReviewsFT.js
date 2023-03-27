@@ -43,8 +43,8 @@ const ReviewsFT = () => {
     axios
       .get(`${API_URL}/reviews`)
       .then((result) => {
-        const reviews = result.data.reviews;
-        console.log(result.data.reviews);
+        const reviews = result.data.reviews.slice(0, 4);
+        console.log(reviews);
         setItems(reviews);
       })
       .catch((error) => {
@@ -57,7 +57,7 @@ const ReviewsFT = () => {
       <ContainerFT>
         <div className={classes.reviewWrap}>
           {items.map((review, idx) => {
-            return <ReviewItemFT author={review.name} imgSrc={review.imageUrl} key={idx}></ReviewItemFT>;
+            return <ReviewItemFT author={review.name} imageUrl={`${API_URL}/${review.imageUrl}`} key={idx}></ReviewItemFT>;
           })}
         </div>
       </ContainerFT>

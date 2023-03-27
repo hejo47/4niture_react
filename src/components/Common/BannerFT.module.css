@@ -1,18 +1,38 @@
-
-.Textbox{
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    width: 300px;
-    height: 300px;
-    border: 1px solid #ccc;
-    text-align: center;
-    color: white;
-   
-
+.Textbox {
+  max-width: 80%;
+  color: white;
+  margin-bottom: 1rem;
+  margin: auto;
+  grid-row: 1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-left: 3rem;
 }
-
-.imgbox > img{
-    height: 100%;
-    width: 100%;
+.Textbox a {
+  background-color: #fcee71;
+  padding: 0.8125rem 2rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.7px;
+  line-height: 5rem;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.Textbox a:hover {
+  cursor: pointer;
+}
+.springWrap {
+  margin-bottom: 1rem;
+  position: relative;
+  width: 80%;
+}
+.springWrap img {
+  width: 100%;
+}
+.imgbox > img {
+  height: 100%;
+  width: 100%;
+  
 }
