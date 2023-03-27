@@ -57,7 +57,7 @@ const ReviewsFT = () => {
       <ContainerFT>
         <div className={classes.reviewWrap}>
           {items.map((review, idx) => {
-            return <ReviewItemFT author={review.name} imgSrc={review.imageUrl} key={idx}></ReviewItemFT>;
+            return <ReviewItemFT author={review.name} imageUrl={`${API_URL}/${review.imageUrl}`} key={idx}></ReviewItemFT>;
           })}
         </div>
       </ContainerFT>

@@ -13,7 +13,7 @@ const ReviewItemFT = (props) => {
       </div>
       <Link to='review/reviewpage'>
         <div className={classes.contentimg}>
-          <img src={props.imgSrc} alt={`${props.author} 님의 리뷰`} />
+          <img src={props.imageUrl} alt={`${props.author} 님의 리뷰`} />
         </div>
       </Link>
       <div className={classes.contents}>
