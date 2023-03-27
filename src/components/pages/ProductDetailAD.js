@@ -49,7 +49,6 @@ const ProductDetail = () => {
   return (
     <>
       <ContainerFT>
-        <HeaderFT></HeaderFT>
         <div className={classes.detail_box}>
           <div className={classes.detail_flex}>
             <div className={classes.detail_image}>
@@ -69,7 +68,7 @@ const ProductDetail = () => {
                 {product.size}
               </div>
               <div className={classes.paybutton_box}>
-                <Button size="large" type="primary" danger={true} className="payment" onClick={onClickPurchase} disabled={product.soldout === 1}>
+                <Button size='large' type='primary' danger={true} className='payment' onClick={onClickPurchase} disabled={product.soldout === 1}>
                   즉시결제하기
                 </Button>
               </div>
@@ -87,13 +86,12 @@ const ProductDetail = () => {
               onClick={() => {
                 navigate(-1);
               }}
-              id="back-btn"
+              id='back-btn'
             >
               뒤로
             </button>
           </div>
         </div>
-        <FooterFT></FooterFT>
       </ContainerFT>
     </>
   );
