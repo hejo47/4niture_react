@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { PlusOutlined } from '@ant-design/icons';
-import {Form, Input, Button, Select, Upload, ConfigProvider,message } from 'antd';
+import {Form, Input, Button, Space, Select, Upload, ConfigProvider,message } from 'antd';
 import {API_URL} from "../../config/constants"
 import axios from "axios";
 
@@ -58,6 +58,7 @@ const UploadAD = () => {
      <ConfigProvider
     theme={{
       token: {
+        padding:16,
         colorPrimary: '#F25A29',
       },
     }}
@@ -67,18 +68,23 @@ const UploadAD = () => {
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 14 }}
         layout="horizontal"
-        style={{ maxWidth: 600 }}
+        style={{ maxWidth: 800 }}
         name="productUpload"
         onFinish={onFinish}
       >
 
-        <Form.Item label="상품이름" name="name">
+        <Form.Item label="상품이름" name="name"
+         rules={[{ required: true, message: '상품이름을 입력해주세요' }]}
+        >
           <Input />
         </Form.Item>
-        <Form.Item label="상품가격" name="price">
+        <Form.Item label="상품가격" name="price"
+        rules={[{ required: true, message: '가격을 입력해주세요 '}]}
+        >
           <Input />
         </Form.Item>
-        <Form.Item label="Category" name="category">
+        <Form.Item label="Category" name="category"
+        rules={[{ required: true, message: '카테고리를 선택해주세요'}]}>
           <Select>
             <Select.Option value="storage">Storage</Select.Option>
             <Select.Option value="table">Table</Select.Option>
@@ -94,17 +100,17 @@ const UploadAD = () => {
         <Form.Item label="상품설명" name="desc">
           <TextArea  rows={4}/>
         </Form.Item>
-        <Form.Item label="Upload" valuePropName="image">
-          <Upload name="image" action={`${API_URL}/image`} listType="picture-card" maxCount={2}
-          onChange={pathImage}>
+        <Form.Item label="상품이미지" valuePropName="image" size="large">
+          <Upload name="상품이미지" action={`${API_URL}/image`} listType="picture-card" maxCount={2}
+          onChange={pathImage} multiple>
             <div>
               <PlusOutlined />
-              <div style={{ marginTop: 8 }}>이미지업로드 (2개까지가능합니다.)</div>
+              <div style={{ marginTop: 8, padding: 10 }}> 최대2개까지<br/>가능합니다.</div>
             </div>
           </Upload>
         </Form.Item>
-        <Form.Item>
-          <Button type ="primary" block  htmlType="submit">상품등록하기</Button>
+        <Form.Item style={{marginLeft: 80}}>
+          <Button type ="primary" block  htmlType="submit" >상품등록하기</Button>
         </Form.Item>
       </Form>
     

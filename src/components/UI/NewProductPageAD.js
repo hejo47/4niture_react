@@ -1,4 +1,4 @@
-//견본파일입니다. 
+//견본파일입니다.
 //상세페이지 링크 클릭해야합니다.
 
 import React from "react";
@@ -46,12 +46,10 @@ const NewProductPageAD = () => {
             let { name, price, reviewnum } = value;
             return (
               <>
-                <Routes>
-                  {/* <Route path='/product/upload' element={<UploadAD />}></Route> */}
-                </Routes>
+                <Routes>{/* <Route path='/product/upload' element={<UploadAD />}></Route> */}</Routes>
                 <Col span={6}>
                   <Card hoverable style={{ width: 240 }} cover={<img alt='example' src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png' />}>
-                    <Link to='/product/upload'>
+                    <Link to='/products/upload'>
                       <Meta title={name} description={price} />
                     </Link>
                   </Card>

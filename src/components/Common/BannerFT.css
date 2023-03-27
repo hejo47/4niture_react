@@ -1,20 +1,20 @@
 .swiper-button-prev {
   left: 5%;
   margin: 0 auto;
-  color: white;
+  color: #333;
 }
 
 .swiper-button-next {
   right: 5%;
   margin: 0 auto;
-  color: white;
+  color: #333;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction{
-    bottom: 100px;
+    bottom: 50px;
 }
 .swiper-pagination-bullet{
     opacity: 1;
@@ -29,7 +29,7 @@
 .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
     position: absolute;
     left: var(--swiper-scrollbar-sides-offset,0%);
-    bottom: var(--swiper-scrollbar-bottom,25px);
+    bottom: var(--swiper-scrollbar-bottom,5px);
     top: var(--swiper-scrollbar-top,auto);
     z-index: 50;
     height: var(--swiper-scrollbar-size,5px);

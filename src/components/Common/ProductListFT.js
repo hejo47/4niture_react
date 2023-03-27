@@ -15,6 +15,7 @@ const ProductListFT = (props) => {
         setProduct(products);
       })
       .catch((error) => {
+        console.log(error);
       });
   }, []);
 
@@ -22,7 +23,7 @@ const ProductListFT = (props) => {
     <div className={classes.productList}>
       {products.map((products, idx) => {
         let { id, name, price, imageUrl, size } = products;
-        const convertPrice = price.toLocaleString('ko-KR');
+        const convertPrice = price.toLocaleString("ko-KR");
         return (
           <Link to={`./products/${id}`}>
             <div className={classes.product}>

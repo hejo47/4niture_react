@@ -1,3 +1,4 @@
+
 .Textbox{
     position: absolute;
     top: 30%;
@@ -11,7 +12,7 @@
 
 }
 
-.imgbox>img{
-    height: auto;
+.imgbox > img{
+    height: 100%;
     width: 100%;
 }
