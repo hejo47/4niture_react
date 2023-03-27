@@ -2,7 +2,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 50px;
-  color : #383633;
+  color: #383633;
 }
 .detail_flex {
   display: flex;
@@ -21,11 +21,7 @@
   font-weight: bold;
   color: navy;
 }
-.detail_subimage img {
-  width: 80%;
-  display: block;
-  margin: 20px auto;
-}
+
 .detail_image img {
   width: 100%;
 }
@@ -47,6 +43,7 @@
 .paybutton_box {
   margin-top: 20px;
 }
+
 .detail_desc {
   width: 80%;
   margin: 0 auto;
@@ -56,11 +53,21 @@
 }
 
 .detail_backbutton button {
-  margin-top: 20px;
+  margin: 20px 0;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 10px;
 }
-.detail_subimage img {
+.detail_subimage_box {
+  margin: 20px;
+}
+
+.detail_subimage_box {
+  margin: 10px 10px;
+}
+.det .detail_subimage_num {
+  width: 100%;
+}
+.detail_subimage_num img {
   width: 100%;
 }
