@@ -17,6 +17,7 @@ import ProductDetail from "./components/pages/ProductDetailAD";
 import ReviewGetAD from "./components/pages/ReviewGetAD";
 import TopBtn from "./components/Common/TopBtnAD";
 import CategoryRoutes from "./components/pages/CategoryRoutes";
+import OptionRoutesFT from "./components/pages/OptionRoutesFT";
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
           }
         />
 
-        <Route path='/Products/:id' element={<ProductDetail />}></Route>
+        <Route path='/products/:id' element={<ProductDetail />}></Route>
 
         <Route
           path='/login' // 로그인
@@ -58,7 +59,7 @@ function App() {
           }
         />
         <Route
-          path='/product/upload' // 새 상품 올리기
+          path='/products/upload' // 새 상품 올리기
           element={
             <>
               <ContainerFT>
@@ -74,7 +75,6 @@ function App() {
           element={
             <>
               <ContainerFT>
-                <HeaderFT />
                 <div style={{ maxWidth: 500, margin: "0 auto", paddingTop: 200, paddingBottom: 200 }}>
                   <ReviewSub />
                 </div>
@@ -97,20 +97,27 @@ function App() {
           }
         ></Route>
         <Route
-          path='/product/new' // 새 상품 리스트
+          path='/products/new' // 새 상품 리스트
           element={
             <>
               <ContainerFT>
-                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
-                  {/* <NewProductPageAD />
-                  {/* 여기가 도상님컴포넌트넣는곳 */}
-                </div>
+                <OptionRoutesFT />
               </ContainerFT>
             </>
           }
         ></Route>
         <Route
-          path='/product' // 전체 상품 리스트(장바구니에 링크걸어둠)
+          path='/products/best' // 베스트 상품 리스트
+          element={
+            <>
+              <ContainerFT>
+                <OptionRoutesFT />
+              </ContainerFT>
+            </>
+          }
+        ></Route>
+        <Route
+          path='/products' // 전체 상품 리스트(장바구니에 링크걸어둠)
           element={
             <>
               <ContainerFT>

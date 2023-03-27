@@ -13,7 +13,7 @@ const Header = () => {
         <ContainerFT>
           <ul className={classes.menu}>
             <li>
-              <Link to='/product/upload'>admin/upload</Link>
+              <Link to='/products/upload'>admin/upload</Link>
             </li>
             <li>
               <Link to='/login'>로그인</Link>
@@ -22,7 +22,7 @@ const Header = () => {
               <Link to='/'>회원가입</Link>
             </li>
             <li>
-              <Link to='/product'>장바구니</Link>
+              <Link to='/products'>장바구니</Link>
             </li>
             <li>
               <Link to='/'>마이페이지</Link>
