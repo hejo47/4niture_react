@@ -13,43 +13,47 @@ import Banner1 from "../../img/banner/Slide-1.jpg";
 import Banner2 from "../../img/banner/Slide-2.jpg";
 import Banner3 from "../../img/banner/Slide-3.jpg";
 
-
 const Swipe = () => {
   return (
     <>
-    <Swiper
-      className={styles}
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      speed={1000}
-      effect={"fade"}
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-      autoplay={{
-        delay: 2000,
-        disableOnInteraction: false
-      }}
-      loop
-      
-    >
-      <SwiperSlide>
-        <div className={styles.Textbox} ><h2>Banner1 Textbox</h2></div>
-        <div class={styles.imgbox}><img src={Banner1} alt="의자1" /></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.Textbox} ><h2>Banner2 Textbox</h2></div>
-        <div class={styles.imgbox}><img src={Banner2} alt="" /></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.Textbox} ><h2>Banner3 Textbox</h2></div>
-        <div class={styles.imgbox}><img src={Banner3} alt="의자1" /></div>
-      </SwiperSlide>
-    </Swiper>
+      <Swiper
+        className={styles}
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        speed={1000}
+        effect={"fade"}
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        loop
+      >
+        <SwiperSlide>
+          <div className={styles.Textbox}>
+            <h2>Textbox</h2>
+          </div>
+          <img src={Banner1} alt='의자1' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.Textbox}>
+            <h2>Textbox</h2>
+          </div>
+          <img src={Banner2} alt='' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.Textbox}>
+            <h2>Textbox</h2>
+          </div>
+          <img src={Banner3} alt='의자1' />
+        </SwiperSlide>
+      </Swiper>
     </>
   );
 };
