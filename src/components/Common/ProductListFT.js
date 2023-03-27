@@ -22,6 +22,7 @@ const ProductListFT = (props) => {
     <div className={classes.productList}>
       {products.map((products, idx) => {
         let { id, name, price, imageUrl, size } = products;
+        const convertPrice = price.toLocaleString('ko-KR');
         return (
           <Link to={`./products/${id}`}>
             <div className={classes.product}>
@@ -30,7 +31,7 @@ const ProductListFT = (props) => {
               </div>
               <div className={classes.productDescription}>
                 <p className={classes.productName}>{name}</p>
-                <p className={classes.productPrice}>{price}</p>
+                <p className={classes.productPrice}>{convertPrice}</p>
                 <p className={classes.size}>size{size}</p>
               </div>
             </div>

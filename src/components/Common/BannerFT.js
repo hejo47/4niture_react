@@ -31,6 +31,8 @@ const Swipe = () => {
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
+        // onSlideChange={() => console.log("slide change")}
+
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
@@ -39,27 +41,27 @@ const Swipe = () => {
       >
         <SwiperSlide>
           <div class={styles.imgbox}>
-            <img src={Banner1} alt="의자1" />
+            <img src={Banner1} alt="배너1" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div class={styles.imgbox}>
-            <img src={Banner2} alt="" />
+            <img src={Banner2} alt="배너2" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div class={styles.imgbox}>
-            <img src={Banner3} alt="의자1" />
+            <img src={Banner3} alt="배너3" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div class={styles.imgbox}>
-            <img src={Banner4} alt="의자1" />
+            <img src={Banner4} alt="배너4" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div class={styles.imgbox}>
-            <img src={Banner5} alt="의자1" />
+            <img src={Banner5} alt="배너5" />
           </div>
         </SwiperSlide>
       </Swiper>

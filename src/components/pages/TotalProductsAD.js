@@ -1,10 +1,11 @@
-//전체 프로덕츠 볼 수 있는 파일 
-
 import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { Card, ConfigProvider, Col, Row } from "antd";
 import axios from "axios";
 import { API_URL } from "../../config/constants";
+import classes from "./TotalProductsAD.module.css"
+import { type } from "@testing-library/user-event/dist/type";
+
 const { Meta } = Card;
 
 
@@ -34,17 +35,25 @@ const TotalProductPageAD = () => {
       >
         <Row gutter={12}>
           {items.map((item,idx) => {
-            let { id, name, price, imageUrl } = item;
+            let { id, name, price, imageUrl, desc } = item;
+            const convertPrice = price.toLocaleString('ko-KR');
             return (
                 <Col span={6}>
                   {item.soldout ===1?
-                <div><p>품절</p></div>
+                <div className={classes.soldoutCover}>
+                SOLD-OUT
+                </div>
                 :
                 null  
                 }
-                  <Card hoverable style={{ width: 240 }} cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
+                  <Card hoverable style={{ width: 240, margin:20}} 
+                    cover={<img alt={`${name}사진`} 
+                    src={`${API_URL}/${imageUrl}`} />}
+                    className={classes.itemCard}
+                  >
                     <Link to={`/products/${id}`}>
-                      <Meta title={name} description={price} />
+                      <Meta title={name} description={convertPrice}/>
+                      <p className={classes.itemDesc}>{desc}</p>
                     </Link>
                   </Card>
                 </Col>
