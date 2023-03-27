@@ -1,6 +1,5 @@
 import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
-import classes from "./UploadAD.module.css";
 import { PlusOutlined } from '@ant-design/icons';
 import {Form, Input, Button, Select, Upload, ConfigProvider,message } from 'antd';
 import {API_URL} from "../../config/constants"
@@ -55,6 +54,7 @@ const UploadAD = () => {
 
     return(
     <>
+      <h1 style={{paddingBottom:60}}>업로드</h1>
      <ConfigProvider
     theme={{
       token: {
@@ -62,7 +62,6 @@ const UploadAD = () => {
       },
     }}
   >
-        <h1>업로드</h1>
         
       <Form
         labelCol={{ span: 4 }}

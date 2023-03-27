@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Card, ConfigProvider, Col, Row } from "antd";
 import axios from "axios";
 import { API_URL } from "../../config/constants";
+import classes from "./CateProductsAD.module.css"
 import ContainerFT from "../UI/ContainerFT";
 const { Meta } = Card;
 const TotalProductPageAD = () => {
@@ -33,19 +34,28 @@ const TotalProductPageAD = () => {
         >
           <Row gutter={12}>
             {items.map((item, idx) => {
-              let { name, price, imageUrl, desc } = item;
+              let {id, name, price, imageUrl, desc } = item;
+              const convertPrice = price.toLocaleString('ko-KR');
               return (
-                <div key={idx} style={{ paddingBottom: 50 }}>
-                  <Col span={6}>
-                    <Card hoverable style={{ width: 240 }} cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
-                      {console.log(imageUrl, name, price)}
-                      <Link to='/product/:id'>
-                        <Meta title={name} description={price} />
-                        {/* <p>{desc}</p> */}
-                      </Link>
-                    </Card>
-                  </Col>
+                <Col span={6} key={idx}>
+                  {item.soldout ===1?
+                <div className={classes.soldoutCover}>
+                SOLD-OUT
                 </div>
+                :
+                null  
+                }
+                  <Card hoverable style={{ width: 240, margin:20}} 
+                  cover={<img alt={`${name}사진`} 
+                    src={`${API_URL}/${imageUrl}`} />}
+                  className={classes.itemCard}
+                >
+                    <Link to={`/products/${id}`}>
+                      <Meta title={name} description={convertPrice} />
+                      <p className={classes.itemDesc}>{desc}</p>
+                    </Link>
+                  </Card>
+                </Col>
               );
             })}
           </Row>
