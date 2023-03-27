@@ -7,13 +7,14 @@
     position: relative;
 }
 .productTheme>img{
-    width: 612.50px;
-    height: 612.50px;
+    width: 100%;
+    height:612.50px;
     object-fit: cover;
     filter: invert(0.2);    
 }
 
 .productTheme>div{
+    width: auto;
     position: absolute;
     top:38%;
     left: 12%;

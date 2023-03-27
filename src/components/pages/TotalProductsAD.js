@@ -37,7 +37,7 @@ const TotalProductPageAD = () => {
             let { id, name, price, imageUrl, desc } = item;
             const convertPrice = price.toLocaleString('ko-KR');
             return (
-                <Col span={6} key={idx}>
+                <Col  md={6} sm={12} xs={16} key={idx}>
                   {item.soldout ===1?
                 <div className={classes.soldoutCover}>
                 SOLD-OUT
