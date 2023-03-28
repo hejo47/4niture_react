@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { API_URL } from "../../config/constants";
-import { Button, ConfigProvider, message, Carousel, Radio } from "antd";
+import { Button, ConfigProvider, message, Carousel } from "antd";
 
 import ContainerFT from "../UI/ContainerFT";
 import classes from "./ProductDetailAD.module.css";
@@ -100,10 +100,10 @@ const ProductDetail = () => {
                   <img src={`${API_URL}/${product.subimageUrl}`} alt={product.name} />
                 </div>
                 <div className={classes.detail_subimage_num}>
-                  <img src={`${API_URL}/${product.subbbimageUrl}`} alt={product.name} />
+                  <img src={`${API_URL}/${product.subbimageUrl}`} alt={product.name} />
                 </div>
                 <div className={classes.detail_subimage_num}>
-                  <img src={`${API_URL}/${product.subbimageUrl}`} alt={product.name} />
+                  <img src={`${API_URL}/${product.subbbimageUrl}`} alt={product.name} />
                 </div>
               </Carousel>
             </div>
