@@ -39,8 +39,7 @@ const App = () => {
   const onSearch = (value) => {
     const updateItems = products.filter((el) => {
       let productname =el.name.includes(value);
-      let productid=productname.id
-      return  <Link to={`${API_URL}/products/${productid}`}></Link>
+      return  <Link to={`${API_URL}/products/${id}`}></Link>
     });
     setDatas(updateItems);
   };
