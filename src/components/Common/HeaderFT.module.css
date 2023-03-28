@@ -66,6 +66,9 @@ header {
   align-items: center;
 } */
 @media (max-width: 633px) {
+  .topMenu{
+    display: none;
+  }
   .gnbAD{
     flex-direction: column;
   }

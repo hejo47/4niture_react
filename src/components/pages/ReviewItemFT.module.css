@@ -1,6 +1,11 @@
 .reviewCon {
   width: calc(98% / 4);
 }
+@media (max-width: 768px) {
+  .reviewCon {
+    width: calc(98% / 2);
+  }
+}
 .author {
   display: flex;
   flex-direction: row;

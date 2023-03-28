@@ -24,8 +24,6 @@
 }
 
 .productImg>img{
-    width: 100%;
-    height:100%;
     width: 208px;
     height: 208px;
     object-fit: cover;
@@ -38,10 +36,6 @@
     transition: all 0.3s ease-in;
 }
 
-.productDescription{/* 기준점으로 의미없이 채워논 css */
-    font-size: 1em;
-
-}
 .productName{
     color:#333;
     font-size: 1.2em;
@@ -59,3 +53,26 @@
     font-size:0.8em;
     padding:1px
 }
+
+@media (max-width: 633px) {
+    .productList{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .product{
+        width: 100%;
+        max-width:calc(540px /2)
+    }
+    .productImg{
+        width: 100%;
+        max-width: 100%;
+    }
+    .productImg>img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .productDescription{
+        width: 100%;
+    }
+   }

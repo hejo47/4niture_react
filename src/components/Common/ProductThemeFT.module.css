@@ -12,7 +12,6 @@
     object-fit: cover;
     filter: invert(0.2);    
 }
-
 .productTheme>div{
     width: auto;
     position: absolute;
@@ -20,18 +19,26 @@
     left: 12%;
     text-align: center;
     color: #f7eee3;
-    
 }
-
 .productTheme>div>span{
     font-size: 1.6em;
     font-weight: 600;
     color: #f7eee3;
-
 }
 .productTheme>div>p{
     font-size: 3em;
     font-weight: 900;
     color: #f7eee3;
-
 }
+@media (max-width: 633px) {
+    .productTheme{
+        width: 100%;
+        min-width: 100%;
+    }
+    .productTheme>img{
+        width: 100%;
+        height: auto;
+    }
+    .theme{font-size: 15%}/* 수정예정 */
+    .p{font-size: 20%;}/* 수정예정 */
+   }
