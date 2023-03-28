@@ -42,7 +42,7 @@ const ProductDetail = () => {
     axios
       .post(`${API_URL}/purchase/${id}`)
       .then((result) => {
-        message.info("결재가 완료 되었습니다");
+        message.info("결제가 완료 되었습니다");
         getProduct();
       })
       .catch((error) => {
