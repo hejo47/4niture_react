@@ -29,5 +29,9 @@
   "scope": "/",
   "display_override": [
     "standalone"
+  ],
+  "categories": [
+    "education",
+    "shopping"
   ]
 }
