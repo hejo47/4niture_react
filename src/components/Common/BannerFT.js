@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay,Zoom } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay, Zoom } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,38 +9,38 @@ import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
 import styles from "./BannerFT.module.css";
 import "./BannerFT.css";
-import Banner1 from "../../img/banner/Slide-4.jpg";
-import Banner2 from "../../img/banner/Slide-5.jpg";
+import Banner1 from "../../img/banner/Slide-3.jpg";
+import Banner2 from "../../img/banner/Slide-2.jpg";
 import Banner3 from "../../img/banner/Slide-6.jpg";
 import Banner4 from "../../img/banner/Slide-7.jpg";
-import springSale from "../../img/banner/Spring-Sale.jpg";
-import "swiper/css/pagination"
+import springSale from "../../img/logo.png";
+import "swiper/css/pagination";
 
 const Swipe = () => {
   let bannerobj = [
     {
       imgUrl: Banner1,
-      desc: "Thousands of deals waiting to be discovered",
+      desc: "당신의 취향을 담은 맞춤 가구, 4niture",
     },
     {
       imgUrl: Banner2,
-      desc: "The single best-selling sofa we make, now 20% off",
+      desc: "지금 바로 4niture에서 당신만의 맞춤 가구를 만나보세요",
     },
     {
       imgUrl: Banner3,
-      desc: "Get set for summer with 20% off all-new outdoor sets",
+      desc: "4niture의 Best Item을 소개합니다.",
     },
     {
       imgUrl: Banner4,
-      desc: "There’s nothing like leather, especially when it’s 30% off",
+      desc: "이 달의 신상품",
     },
   ];
   return (
     <>
       <Swiper
-        className={styles.Swiper} 
+        className={styles.Swiper}
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay,Zoom]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay, Zoom]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
@@ -58,8 +58,6 @@ const Swipe = () => {
         }}
         loop
         zoom={true}
-        
-        
       >
         {bannerobj.map((item) => {
           return (
