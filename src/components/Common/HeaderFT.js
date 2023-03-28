@@ -46,7 +46,7 @@ const Header = () => {
         <ContainerFT>
           <div className={classes.gnbAD}>
             <GnbAD></GnbAD>
-            <SearchAD />
+            <SearchAD></SearchAD>
           </div>
         </ContainerFT>
       </div>

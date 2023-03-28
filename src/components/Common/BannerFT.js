@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay,Zoom } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,6 +14,7 @@ import Banner2 from "../../img/banner/Slide-5.jpg";
 import Banner3 from "../../img/banner/Slide-6.jpg";
 import Banner4 from "../../img/banner/Slide-7.jpg";
 import springSale from "../../img/banner/Spring-Sale.jpg";
+import "swiper/css/pagination"
 
 const Swipe = () => {
   let bannerobj = [
@@ -33,13 +34,13 @@ const Swipe = () => {
       imgUrl: Banner4,
       desc: "There’s nothing like leather, especially when it’s 30% off",
     },
-  ]
+  ];
   return (
     <>
       <Swiper
-        className={styles.Swiper}
+        className={styles.Swiper} 
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay,Zoom]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
@@ -50,12 +51,15 @@ const Swipe = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
         // onSlideChange={() => console.log("slide change")}
-    
+
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
         }}
         loop
+        zoom={true}
+        
+        
       >
         {bannerobj.map((item) => {
           return (
@@ -73,7 +77,6 @@ const Swipe = () => {
             </SwiperSlide>
           );
         })}
-        
       </Swiper>
     </>
   );
