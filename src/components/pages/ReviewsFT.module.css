@@ -1,6 +1,8 @@
 .reviewWrap {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
   column-gap: 1%;
+  row-gap: 15px;
 }

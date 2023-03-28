@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { API_URL } from "../../config/constants";
-import { Button, ConfigProvider, message, Carousel, Radio } from "antd";
+import { Button, ConfigProvider, message, Carousel } from "antd";
 
 import ContainerFT from "../UI/ContainerFT";
 import classes from "./ProductDetailAD.module.css";
+import "./ProductDetailAD.css";
 
 import axios from "axios";
 import dayjs from "dayjs";
@@ -89,6 +90,7 @@ const ProductDetail = () => {
           <div className={classes.detail_desc}>
             <div className={classes.detail_text}>Description</div>
             {product.desc}
+
             <div className={classes.detail_Carousel_box}>
               <Carousel dotPosition={dotPosition}>
                 <div className={classes.detail_subimage_box}>
@@ -100,10 +102,10 @@ const ProductDetail = () => {
                   <img src={`${API_URL}/${product.subimageUrl}`} alt={product.name} />
                 </div>
                 <div className={classes.detail_subimage_num}>
-                  <img src={`${API_URL}/${product.subbbimageUrl}`} alt={product.name} />
+                  <img src={`${API_URL}/${product.subbimageUrl}`} alt={product.name} />
                 </div>
                 <div className={classes.detail_subimage_num}>
-                  <img src={`${API_URL}/${product.subbimageUrl}`} alt={product.name} />
+                  <img src={`${API_URL}/${product.subbbimageUrl}`} alt={product.name} />
                 </div>
               </Carousel>
             </div>
