@@ -1,0 +1,6 @@
+.slick-dots li.slick-active button {
+  background-color: black !important;
+}
+.slick-dots li button {
+  background-color: gray !important;
+}

@@ -5,6 +5,7 @@ import { Button, ConfigProvider, message, Carousel } from "antd";
 
 import ContainerFT from "../UI/ContainerFT";
 import classes from "./ProductDetailAD.module.css";
+import "./ProductDetailAD.css";
 
 import axios from "axios";
 import dayjs from "dayjs";
@@ -89,6 +90,7 @@ const ProductDetail = () => {
           <div className={classes.detail_desc}>
             <div className={classes.detail_text}>Description</div>
             {product.desc}
+
             <div className={classes.detail_Carousel_box}>
               <Carousel dotPosition={dotPosition}>
                 <div className={classes.detail_subimage_box}>
