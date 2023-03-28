@@ -1,7 +1,6 @@
 .detail_box {
   width: 80%;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 50px auto;
   color: #383633;
 }
 .detail_flex {
@@ -46,7 +45,7 @@
 
 .detail_desc {
   width: 80%;
-  height: 500px;
+  height: auto;
   margin: 0 auto;
   margin-top: 50px;
   font-size: 1.2rem;
