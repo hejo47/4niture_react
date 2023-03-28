@@ -100,9 +100,7 @@ function App() {
           path='/products/new' // 새 상품 리스트
           element={
             <>
-              <ContainerFT>
-                <OptionRoutesFT />
-              </ContainerFT>
+              <OptionRoutesFT />
             </>
           }
         ></Route>
@@ -110,9 +108,7 @@ function App() {
           path='/products/best' // 베스트 상품 리스트
           element={
             <>
-              <ContainerFT>
-                <OptionRoutesFT />
-              </ContainerFT>
+              <OptionRoutesFT />
             </>
           }
         ></Route>
