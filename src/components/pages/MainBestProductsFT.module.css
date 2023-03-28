@@ -20,4 +20,5 @@ pc 1024px~1800 */
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
+    h3{text-align: center;}
 }

@@ -65,3 +65,8 @@ header {
   justify-content: flex-start;
   align-items: center;
 } */
+@media (max-width: 633px) {
+  .gnbAD{
+    flex-direction: column;
+  }
+ }
