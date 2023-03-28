@@ -14,7 +14,7 @@ const App = () => {
     axios
       .get(url)
       .then((result) => {
-        const products = result.data.product;
+        const products = result.data.products;
         setProducts(products);
       })
       .catch((error) => {

@@ -44,7 +44,7 @@ const TotalProductPageAD = () => {
             {items.map((item, idx) => {
               let { name, price, imageUrl, desc } = item;
               return (
-                <div key={idx} style={{ paddingBottom: 50 }}>
+                
                   <Col span={6} xs={24} md={12} sm={12} lg={6} className="reviewCard">
                     <Card hoverable cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
                       {console.log(imageUrl, name, price)}
@@ -54,7 +54,7 @@ const TotalProductPageAD = () => {
                       </Link>
                     </Card>
                   </Col>
-                </div>
+                
               );
             })}
           </Row>
