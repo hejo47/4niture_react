@@ -1,43 +1,68 @@
 import React, { useEffect, useState } from "react";
 import { Input, Space } from "antd";
-import { useParams, useNavigate, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import { useParams, useNavigate, Routes, Route,Link } from "react-router-dom";
 import { API_URL } from "../../config/constants";
+import axios from "axios";
 const { Search } = Input;
 
 const App = () => {
+  const [products, setProducts] = useState([]);
   const navigate = useNavigate();
   const { id } = useParams();
-  const [product, setProduct] = useState(null);
-  const getProduct = () => {
+  useEffect(() => {
+    let url = `${`${API_URL}/products`}`;
     axios
-      .get(`${API_URL}/products/${id}`)
+      .get(url)
       .then((result) => {
-        setProduct(result.data.product);
+        const products = result.data.products;
+        setProducts(products);
       })
       .catch((error) => {
         console.log(error);
       });
-  };
-   useEffect(() => {
-    getProduct();
   }, []);
-  const onSearch = (value) => {
-   
-   
-    if (value == product.name) {
-      navigate(`/products/${id}`);
+ 
+
+  const [datas, setDatas] = useState(products);
+
+  const filterItem = (cateItem) => {
+    if (cateItem === "카테고리 All") {
+      setDatas(products);
+      return;
     }
+    const updateItems = products.filter((el) => {
+      return el.category == cateItem;
+    });
+    setDatas(updateItems);
   };
 
-  <Space direction="vertical">
-    <Search
-      placeholder="input search text"
-      onSearch={onSearch}
-      style={{
-        width: 200,
-      }}
-    />
-  </Space>;
+  const onSearch = (value) => {
+    const updateItems = products.filter((el) => {
+      let productname =el.name.includes(value);
+      let productid=productname.id
+      return  <Link to={`${API_URL}/products/${productid}`}></Link>
+    });
+    setDatas(updateItems);
+  };
+
+  return (
+    <>
+      <select onChange={(e) => filterItem(e.target.value)}>
+      
+      </select>
+      {datas.map((item, key) => (
+        <div>{<h3>{item.name}</h3>}</div>
+      ))}
+      <Space direction="vertical">
+        <Search
+          placeholder="input search text"
+          onSearch={onSearch}
+          style={{
+            width: 200,
+          }}
+        />
+      </Space>
+    </>
+  );
 };
 export default App;
