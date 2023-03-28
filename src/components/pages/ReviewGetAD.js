@@ -48,7 +48,7 @@ const ReviewGetAD = () => {
               <>
                 <Routes>{<Route path="/review/upload" element={<ReviewSub />}></Route>}</Routes>
                 <Col span={6} xs={24} md={12} sm={12} lg={6} key={idx} className="reviewCard">
-                  <Card hoverable style={{ width: 240 }} cover={<img alt="review-img" src={`${API_URL}/${review.imageUrl}`} />}>
+                  <Card hoverable  cover={<img alt="review-img" src={`${API_URL}/${review.imageUrl}`} />}>
                     <Link to="/review/upload">
                       <span>작성자:</span>
                       <Meta title={review.name} />

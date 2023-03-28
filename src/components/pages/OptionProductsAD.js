@@ -5,6 +5,8 @@ import { Card, ConfigProvider, Col, Row } from "antd";
 import axios from "axios";
 import { API_URL } from "../../config/constants";
 import ContainerFT from "../UI/ContainerFT";
+import "./OptionProductsAD.css";
+
 const { Meta } = Card;
 const TotalProductPageAD = () => {
   const [items, setItems] = useState([]);
@@ -31,15 +33,22 @@ const TotalProductPageAD = () => {
             },
           }}
         >
-          <Row gutter={12}>
+          <Row
+            gutter={{
+              xs: 8,
+              sm: 16,
+              md: 24,
+              lg: 32,
+            }}
+          >
             {items.map((item, idx) => {
               let { name, price, imageUrl, desc } = item;
               return (
                 <div key={idx} style={{ paddingBottom: 50 }}>
-                  <Col span={6}>
-                    <Card hoverable style={{ width: 240 }} cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
+                  <Col span={6} xs={24} md={12} sm={12} lg={6} className="reviewCard">
+                    <Card hoverable cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
                       {console.log(imageUrl, name, price)}
-                      <Link to='/products/:id'>
+                      <Link to="/products/:id">
                         <Meta title={name} description={price} />
                         {/* <p>{desc}</p> */}
                       </Link>
