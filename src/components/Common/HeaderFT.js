@@ -22,7 +22,7 @@ const Header = () => {
               <Link to='/'>회원가입</Link>
             </li>
             <li>
-              <Link to='/products'>장바구니</Link>
+              <Link to='/'>장바구니</Link>
             </li>
             <li>
               <Link to='/'>마이페이지</Link>
@@ -46,7 +46,7 @@ const Header = () => {
         <ContainerFT>
           <div className={classes.gnbAD}>
             <GnbAD></GnbAD>
-            <SearchAD />
+            <SearchAD></SearchAD>
           </div>
         </ContainerFT>
       </div>
