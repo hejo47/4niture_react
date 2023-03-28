@@ -7,7 +7,7 @@
   padding-bottom: 30px;
 }
 .footerDesc {
-  width: 40%;
+  width: 60%;
   padding-right: 50px;
 }
 .footerDesc h2 {
@@ -15,7 +15,18 @@
 }
 .footerDesc p {
   word-break: keep-all;
+  color: #5d5d5d;
+  padding:2px;
 }
+.footerDesc span{
+  font-size: 15px;
+  font-weight: 500;
+}
+.footerVerify{
+  font-weight:600;
+  color:#000000E0;
+}
+
 .snsWrap {
   display: flex;
   justify-content: flex-start;
