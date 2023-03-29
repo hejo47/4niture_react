@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Input, Space } from "antd";
 import { useParams, useNavigate, Routes, Route, Link } from "react-router-dom";
 import { API_URL } from "../../config/constants";
@@ -25,49 +25,28 @@ const App = () => {
   }, []);
 
   const allName = [
-    {...new Set(
-      products.map((el,idx) => {
-        return el.name+idx;
+    ...new Set(
+      products.map((el, idx) => {
+        return [el.name, idx + 1];
       })
-     
-    )},
-    {...new Set(
-      products.map((el,idx) => {
-        return el.name.idx+1;
-      })
-    )}
+    ),
   ];
-  console.log(allName[0]);
-  
-  let productname=allName[0];
-  let productidx=allName[1];
-  const filterItem = (nameItem) => {
-    if (nameItem === productname) {
-      
-      return <Link to={`${API_URL}/products/${nameItem.id}`}></Link>;
-    }
+
+  console.log(allName);
 
   const onChangeUrl = (value) => {
-    
-    const updateItems = products.filter((el) => {
-     if (productname === value) {
-        let filtername = [el.name.includes(value)];
-        let filterid = [productname.id];
-        return <Link to={`${API_URL}/products/${productidx}`}></Link>;
-      }
-    });
-    setDatas(updateItems);
+    if (value === allName) {
+      return ;
+     
+    }
+    navigate(`/products/${allName[1]}`)
   };
-
   return (
     <>
-      {datas.map((item, key) => (
-        <div>{<h3>{item.name}</h3>}</div>
-      ))}
       <Space direction="vertical">
         <Search
           placeholder="input search text"
-          onSearch={(e)=>filterItem(e.target.value)}
+          onSearch={(e) => onChangeUrl(e)}
           style={{
             width: 200,
           }}
@@ -75,7 +54,6 @@ const App = () => {
       </Space>
     </>
   );
-};
 };
 
 export default App;
