@@ -58,10 +58,10 @@ const items = [
     label: "SHOWROOM",
     key: "showroom",
   },
-  {
-    label: "EVENT",
-    key: "event",
-  },
+  // {
+  //   label: "EVENT",
+  //   key: "event",
+  // },
   {
     label: "REVIEW",
     key: "review",
@@ -89,8 +89,8 @@ const GnbAD = () => {
       window.location.href = `/products/best`;
     } else if (e.key == "showroom") {
       alert("준비중입니다.");
-    } else if (e.key == "event") {
-      alert("준비중입니다.");
+      // } else if (e.key == "event") {
+      //   alert("준비중입니다.");
     } else if (e.key == "review") {
       window.location.href = `/review/upload`;
     } else {
