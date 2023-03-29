@@ -22,14 +22,12 @@
 <img src="https://img.shields.io/badge/visualstudio-018EF5?style=for-the-badge&logo=visualstudiocode&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 <br>
-<br>
 
 ### Config
 
 <br>
 
 <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
-<br>
 <br>
 
 ### Development
@@ -38,13 +36,14 @@
 | :--------: | :------: | :-----: | :-----: |
 |   ![js]    | ![react] | ![node] | ![pwa1] |
 
+<br>
+
 ### Communication
 
 <br>
 <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
 <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
 <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
-<br>
 <br>
 
 ## 프로젝트 소개
@@ -91,7 +90,7 @@
 
 ## 라이센스
 
-[js]: /4urniture_react/images/stack/javascript.svg
-[react]: /4urniture_react/images/stack/react.svg
-[node]: /4urniture_react/images/stack/node.svg
-[pwa1]: /4urniture_react/images/stack/pwa1.svg
+[js]: /images/stack/javascript.svg
+[react]: /images/stack/react.svg
+[node]: /images/stack/node.svg
+[pwa1]: /images/stack/pwa1.svg
