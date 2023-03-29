@@ -93,10 +93,11 @@
 
 ## 배운 점
 
-1. 처음으로 데이터베이스를 운용해봐서 어렵지만 몇가지 패턴된 상황을 학습하다보니 조금은 이해하게 되었다.
-2. <br>
-
-## 라이센스
+1. Vercel을 이용하여 React.js 애플리케이션을 배포하고 호스팅하는 방법을 배웠다.
+2. React.js의 useEffect 훅을 이용하여 API 요청을 처리하고, 상태를 업데이트하는 방법을 배웠다.
+3. Axios를 이용하여 서버와 통신하는 방법을 배울 수 있습니다.
+4. React.js에서 컴포넌트 간 데이터 전달을 위해 props와 state를 사용하는 방법을 배울 수 있습니다.
+5. React.js에서 조건부 렌더링과 리스트 렌더링을 구현하는 방법을 배울 수 있습니다.<br>
 
 [js]: /images/stack/javascript.svg
 [react]: /images/stack/react.svg
