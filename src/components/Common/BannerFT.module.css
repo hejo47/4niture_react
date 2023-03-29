@@ -1,7 +1,8 @@
 .Textbox {
-  max-width: 80%;
+  width: 100%;
   color: white;
-  margin-bottom: 1rem;
+  font-size: 2vw;
+  margin-bottom: 15px;
   margin: auto;
   grid-row: 1;
   position: absolute;
@@ -11,14 +12,17 @@
 }
 .Textbox a {
   background-color: #fcee71;
-  padding: 0.8125rem 2rem;
-  font-size: 0.875rem;
+  padding: 1% 2%;
+  font-size: 1vw;
   letter-spacing: 0.7px;
-  line-height: 5rem;
-  margin-top: 50px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+.Textbox h2 {
+  word-break: keep-all;
+  text-shadow: 2px 2px 7px black;
+  margin-bottom: 2%;
 }
 .Textbox a:hover {
   cursor: pointer;
@@ -26,15 +30,12 @@
 .springWrap {
   margin-bottom: 1rem;
   position: relative;
-  width: 80%;
+  width: 100%;
 }
 .springWrap img {
-  width: 100%;
+  width: 10%;
 }
 .imgbox > img {
   height: 100%;
   width: 100%;
-  
 }
-
-
