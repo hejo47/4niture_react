@@ -24,33 +24,33 @@ const App = () => {
       });
   }, []);
 
-  const AllCat = [
+  const allName = [
     {...new Set(
-      products.map((el) => {
-        return el.name;
+      products.map((el,idx) => {
+        return el.name+idx;
       })
      
     )},
     {...new Set(
       products.map((el,idx) => {
-        return el.idx+1;
+        return el.name.idx+1;
       })
     )}
   ];
-  console.log(AllCat);
+  console.log(allName[0]);
   
-  const filterItem = (catItem) => {
-    if (catItem === "모두") {
-      setDatas(products);
-      return;
+  let productname=allName[0];
+  let productidx=allName[1];
+  const filterItem = (nameItem) => {
+    if (nameItem === productname) {
+      
+      return <Link to={`${API_URL}/products/${nameItem.id}`}></Link>;
     }
 
   const onChangeUrl = (value) => {
-     let productname=AllCat[0];
-     let productidx=AllCat[1];
+    
     const updateItems = products.filter((el) => {
-     
-      if (productname === value) {
+     if (productname === value) {
         let filtername = [el.name.includes(value)];
         let filterid = [productname.id];
         return <Link to={`${API_URL}/products/${productidx}`}></Link>;
@@ -67,7 +67,7 @@ const App = () => {
       <Space direction="vertical">
         <Search
           placeholder="input search text"
-          onSearch={onChangeUrl}
+          onSearch={(e)=>filterItem(e.target.value)}
           style={{
             width: 200,
           }}
