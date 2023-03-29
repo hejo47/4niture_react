@@ -88,7 +88,7 @@ const GnbAD = () => {
     } else if (e.key == "best") {
       window.location.href = `/products/best`;
     } else if (e.key == "showroom") {
-      alert("준비중입니다.");
+      window.location.href = `/showroom`;
       // } else if (e.key == "event") {
       //   alert("준비중입니다.");
     } else if (e.key == "review") {
@@ -97,6 +97,6 @@ const GnbAD = () => {
       console.log("error");
     }
   };
-  return <Menu onClick={onClick} mode='horizontal' items={items} />;
+  return <Menu onClick={onClick} mode="horizontal" items={items} />;
 };
 export default GnbAD;
