@@ -23,6 +23,9 @@ header {
 .logoWrap {
   width: 100%;
   padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logoWrap a {
   height: 64px;
@@ -54,7 +57,7 @@ header {
 .gnbAD {
   display: flex;
 }
-.gnbBtn{
+.gnbBtn {
   display: flex;
   flex-direction: row;
 }
@@ -70,14 +73,14 @@ header {
   align-items: center;
 } */
 @media (max-width: 633px) {
-  .topMenu{
+  .topMenu {
     display: none;
   }
-  .gnbAD{
+  .gnbAD {
     flex-direction: column;
   }
-  .gnbBtn{
+  .gnbBtn {
     display: flex;
     flex-direction: row;
   }
- }
+}

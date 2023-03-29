@@ -58,10 +58,10 @@ const items = [
     label: "SHOWROOM",
     key: "showroom",
   },
-  {
-    label: "EVENT",
-    key: "event",
-  },
+  // {
+  //   label: "EVENT",
+  //   key: "event",
+  // },
   {
     label: "REVIEW",
     key: "review",
@@ -69,7 +69,6 @@ const items = [
 ];
 const GnbAD = () => {
   const onClick = (e) => {
-    console.log("click ", e.key);
     if (e.key == 0) {
       window.location.href = `/products/category/all`;
     } else if (e.key == 1) {
@@ -90,8 +89,8 @@ const GnbAD = () => {
       window.location.href = `/products/best`;
     } else if (e.key == "showroom") {
       alert("준비중입니다.");
-    } else if (e.key == "event") {
-      alert("준비중입니다.");
+      // } else if (e.key == "event") {
+      //   alert("준비중입니다.");
     } else if (e.key == "review") {
       window.location.href = `/review/upload`;
     } else {

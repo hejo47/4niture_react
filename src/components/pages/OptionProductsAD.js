@@ -44,10 +44,10 @@ const TotalProductPageAD = () => {
             {items.map((item, idx) => {
               let { name, price, imageUrl, desc } = item;
               return (
-                <Col span={6} xs={24} md={12} sm={12} lg={6} className="reviewCard">
+                <Col span={6} xs={24} md={12} sm={12} lg={6} className='reviewCard'>
                   <Card hoverable cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
-                    {console.log(imageUrl, name, price)}
-                    <Link to="/products/:id">
+                    {/* {console.log(imageUrl, name, price)} */}
+                    <Link to='/products/:id'>
                       <Meta title={name} description={price} />
                       {/* <p>{desc}</p> */}
                     </Link>

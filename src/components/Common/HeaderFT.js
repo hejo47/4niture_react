@@ -39,6 +39,7 @@ const Header = () => {
               <img src={logoImg} alt='logo' />
             </h1>
           </Link>
+          <UploadBtnAD></UploadBtnAD>
         </div>
       </ContainerFT>
       <div className={classes.gnbWrap}>
