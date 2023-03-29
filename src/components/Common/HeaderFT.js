@@ -4,8 +4,9 @@ import ContainerFT from "../UI/ContainerFT";
 import classes from "../Common/HeaderFT.module.css";
 import logoImg from "../../img/logo.png";
 import GnbAD from "../Common/GnbAD";
-import SearchAD from "../Common/SearchAD";
 import UploadBtnAD from "../Common/UploadBtnAD";
+import Icon, { SearchOutlined } from '@ant-design/icons';
+
 
 const Header = () => {
   return (
@@ -46,7 +47,9 @@ const Header = () => {
             <GnbAD></GnbAD>
             <div className={classes.gnbBtn}>
               <UploadBtnAD></UploadBtnAD>
-              <SearchAD></SearchAD>
+              <Link to ='/search' style ={{display:"table"}}>
+                <SearchOutlined style={{fontSize:"24px", display:"table-cell",paddingBottom:15,marginLeft:10, verticalAlign:"middle"}}/>
+              </Link>
             </div>
           </div>
         </ContainerFT>
