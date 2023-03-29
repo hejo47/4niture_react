@@ -25,58 +25,37 @@ const App = () => {
   }, []);
 
   const allName = [
-    {
-      ...new Set(
-        products.map((el, idx) => {
-          return el.name + idx;
-        })
-      ),
-    },
-    {
-      ...new Set(
-        products.map((el, idx) => {
-          return el.name.idx + 1;
-        })
-      ),
-    },
+
+    ...new Set(
+      products.map((el, idx) => {
+        return [el.name, idx + 1];
+      })
+    ),
   ];
-  // console.log(allName[0]);
 
-  let productname = allName[0];
-  let productidx = allName[1];
-  const filterItem = (nameItem) => {
-    if (nameItem === productname) {
-      return <Link to={`${API_URL}/products/${nameItem.id}`}></Link>;
+  console.log(allName);
+
+  const onChangeUrl = (value) => {
+    if (value === allName) {
+      return ;
+     
     }
-
-    const onChangeUrl = (value) => {
-      const updateItems = products.filter((el) => {
-        if (productname === value) {
-          let filtername = [el.name.includes(value)];
-          let filterid = [productname.id];
-          return <Link to={`${API_URL}/products/${productidx}`}></Link>;
-        }
-      });
-      setDatas(updateItems);
-    };
-
-    return (
-      <>
-        {datas.map((item, key) => (
-          <div>{<h3>{item.name}</h3>}</div>
-        ))}
-        <Space direction='vertical'>
-          <Search
-            placeholder='input search text'
-            onSearch={(e) => filterItem(e.target.value)}
-            style={{
-              width: 200,
-            }}
-          />
-        </Space>
-      </>
-    );
+    navigate(`/products/${allName[1]}`)
   };
+  return (
+    <>
+      <Space direction="vertical">
+        <Search
+          placeholder="input search text"
+          onSearch={(e) => onChangeUrl(e)}
+          style={{
+            width: 200,
+          }}
+        />
+      </Space>
+    </>
+  );
+
 };
 
 export default App;
