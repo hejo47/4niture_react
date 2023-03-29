@@ -54,6 +54,10 @@ header {
 .gnbAD {
   display: flex;
 }
+.gnbBtn{
+  display: flex;
+  flex-direction: row;
+}
 /* .gnb {
   display: flex;
   justify-content: center;
@@ -71,5 +75,9 @@ header {
   }
   .gnbAD{
     flex-direction: column;
+  }
+  .gnbBtn{
+    display: flex;
+    flex-direction: row;
   }
  }

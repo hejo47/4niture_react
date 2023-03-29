@@ -5,6 +5,7 @@ import classes from "../Common/HeaderFT.module.css";
 import logoImg from "../../img/logo.png";
 import GnbAD from "../Common/GnbAD";
 import SearchAD from "../Common/SearchAD";
+import UploadBtnAD from "../Common/UploadBtnAD";
 
 const Header = () => {
   return (
@@ -12,9 +13,6 @@ const Header = () => {
       <div className={classes.topMenu}>
         <ContainerFT>
           <ul className={classes.menu}>
-            <li>
-              <Link to='/products/upload'>admin/upload</Link>
-            </li>
             <li>
               <Link to='/login'>로그인</Link>
             </li>
@@ -46,7 +44,10 @@ const Header = () => {
         <ContainerFT>
           <div className={classes.gnbAD}>
             <GnbAD></GnbAD>
-            <SearchAD></SearchAD>
+            <div className={classes.gnbBtn}>
+              <UploadBtnAD></UploadBtnAD>
+              <SearchAD></SearchAD>
+            </div>
           </div>
         </ContainerFT>
       </div>
