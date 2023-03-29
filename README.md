@@ -30,4 +30,4 @@ containerAD
 https://github.com/naehyun25/4niture_server.git
 
 # logo img
-![](https://github.com/YoungBeomLee/react-mango-project/issues/1#issue-1644902011.png)
+![](https://github.com/YoungBeomLee/react-mango-project/issues/1#issue-1644902011)
