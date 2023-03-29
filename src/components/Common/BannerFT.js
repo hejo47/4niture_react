@@ -13,6 +13,7 @@ import Banner1 from "../../img/banner/Slide-3.jpg";
 import Banner2 from "../../img/banner/Slide-2.jpg";
 import Banner3 from "../../img/banner/Slide-6.jpg";
 import Banner4 from "../../img/banner/Slide-7.jpg";
+import Banner5 from "../../img/banner/banner-review.jpg";
 import springSale from "../../img/logo.png";
 import "swiper/css/pagination";
 
@@ -33,6 +34,10 @@ const Swipe = () => {
     {
       imgUrl: Banner4,
       desc: "이 달의 신상품",
+    },
+    {
+      imgUrl: Banner5,
+      desc: "",
     },
   ];
   return (
@@ -60,6 +65,7 @@ const Swipe = () => {
         zoom={true}
       >
         {bannerobj.map((item) => {
+          
           return (
             <SwiperSlide>
               <div className={styles.imgbox} key={item.id}>
@@ -68,7 +74,8 @@ const Swipe = () => {
                     <img src={springSale} alt="스프링세일" />
                   </div>
                   <h2>{item.desc}</h2>
-                  <a href="#">Shop The Sale</a>
+                  {item.desc===""?(<></>):(<a href="#">Shop The Sale</a>)}
+
                 </div>
                 <img src={item.imgUrl} alt="배너" />
               </div>
