@@ -69,7 +69,6 @@ const items = [
 ];
 const GnbAD = () => {
   const onClick = (e) => {
-    console.log("click ", e.key);
     if (e.key == 0) {
       window.location.href = `/products/category/all`;
     } else if (e.key == 1) {
