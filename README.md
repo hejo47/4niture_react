@@ -34,12 +34,16 @@
 ### Communication
 
 <br>
-<img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"><img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"><img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+<img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 <br>
 
 ## 프로젝트 소개
 
-이 프로젝트는 PWA 앱으로 제작된 **반응형 풀스택 프로젝트**입니다. 프론트엔드는 **리액트**로 제작되었으며, 백엔드는 **Node.js의 Express 프레임워크**를 활용하여 서버를 구현하였습니다. 데이터베이스는 Sequelize를 사용하여 관리합니다. 이 프로젝트는 모바일과 데스크탑 모두에서 쉽게 사용할 수 있도록 반응형으로 제작되었습니다. 사용자 친화적인 **PWA 앱**으로, 간단한 설정으로 모바일 기기에서도 쉽게 이용할 수 있습니다.
+이 프로젝트는 PWA 앱으로 제작된 **반응형 풀스택 프로젝트**입니다.  
+프론트엔드는 **리액트**로 제작되었으며, 백엔드는 **Node.js의 Express 프레임워크**를 활용하여 서버를 구현하였습니다.  
+데이터베이스는 Sequelize를 사용하여 관리합니다.  
+이 프로젝트는 모바일과 데스크탑 모두에서 쉽게 사용할 수 있도록 반응형으로 제작되었습니다.  
+사용자 친화적인 **PWA 앱**으로, 간단한 설정으로 모바일 기기에서도 쉽게 이용할 수 있습니다.
 <br>
 
 <img src="./images/mainpage.png">
