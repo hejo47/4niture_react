@@ -25,6 +25,7 @@ const App = () => {
   }, []);
 
   const allName = [
+
     ...new Set(
       products.map((el, idx) => {
         return [el.name, idx + 1];
@@ -54,6 +55,7 @@ const App = () => {
       </Space>
     </>
   );
+
 };
 
 export default App;

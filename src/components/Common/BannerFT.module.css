@@ -1,14 +1,15 @@
+.imgbox {
+  position: relative;
+}
 .Textbox {
   width: 100%;
   color: white;
   font-size: 2vw;
   margin-bottom: 15px;
-  margin: auto;
   grid-row: 1;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  margin-left: 3rem;
+  margin-top: 2%;
+  margin-left: 7%;
 }
 .Textbox a {
   background-color: #fcee71;

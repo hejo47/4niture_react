@@ -11,7 +11,7 @@ const ReviewSub = () => {
   const [messageApi, contextHolder] = message.useMessage();
   const [imageUrl, setImageUrl] = useState(null);
   const onFinish = function (val) {
-    console.log(val);
+    // console.log(val);
     axios
       .post(`${API_URL}/reviews`, {
         name: val.name,
@@ -20,7 +20,7 @@ const ReviewSub = () => {
         desc: val.desc,
       })
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         // navigate("/", { replace: true });
       })
       .catch((error) => {
@@ -54,17 +54,17 @@ const ReviewSub = () => {
   return (
     <div id={styles.uploadContainer}>
       <ConfigProvider theme={{ token: { colorPrimary: "#F25A29" } }}>
-        <Form name="upload" style={{ maxWidth: 600 }} onFinish={onFinish} form={form}>
-          <Form.Item name="upload" valuePropName="image">
+        <Form name='upload' style={{ maxWidth: 600 }} onFinish={onFinish} form={form}>
+          <Form.Item name='upload' valuePropName='image'>
             <div id={styles.uploadImg}>
-              <Upload name="image" action={`${API_URL}/image`} listType="picture" showUploadList={false} onChange={onChangeImage}>
+              <Upload name='image' action={`${API_URL}/image`} listType='picture' showUploadList={false} onChange={onChangeImage}>
                 {imageUrl ? (
-                  <img id={styles.uploadImg} src={`${API_URL}/${imageUrl}`} alt="" />
+                  <img id={styles.uploadImg} src={`${API_URL}/${imageUrl}`} alt='' />
                 ) : (
                   <div id={styles.imguploadbox}>
-                    <img src="../images/icons/camera.png" alt="" />
-                    <span style={{display:"block",textAlign:"center"}}>사진을올려주세요.</span>
-                    <span style={{display:"block",textAlign:"center"}}>jpg | png</span>
+                    <img src='../images/icons/camera.png' alt='' />
+                    <span style={{ display: "block", textAlign: "center" }}>사진을올려주세요.</span>
+                    <span style={{ display: "block", textAlign: "center" }}>jpg | png</span>
                   </div>
                 )}
               </Upload>
@@ -72,25 +72,25 @@ const ReviewSub = () => {
           </Form.Item>
 
           <Divider></Divider>
-          <Form.Item label={<span className="upload-label">작성자</span>} name="name" rules={[{ required: true, message: "이름을 입력해주세요" }]}>
-            <Input className={styles.uploadName} placeholder="이름을 입력해주세요" size="large" />
+          <Form.Item label={<span className='upload-label'>작성자</span>} name='name' rules={[{ required: true, message: "이름을 입력해주세요" }]}>
+            <Input className={styles.uploadName} placeholder='이름을 입력해주세요' size='large' />
           </Form.Item>
           <Divider></Divider>
 
-          <Form.Item label={<span className="upload-label">상품명</span>} name="productname" rules={[{ required: true, message: "상품명을 입력해주세요" }]}>
-            <Input className={styles.uploadName} placeholder="상품명을 입력해주세요" size="large" />
+          <Form.Item label={<span className='upload-label'>상품명</span>} name='productname' rules={[{ required: true, message: "상품명을 입력해주세요" }]}>
+            <Input className={styles.uploadName} placeholder='상품명을 입력해주세요' size='large' />
           </Form.Item>
           <Divider></Divider>
 
-          <Form.Item label={<div className="upload-label">글쓰기</div>} name="desc" rules={[{ required: true, message: "텍스트를 입력해주세요." }]}>
-            <TextArea className={styles.Textarea} size="large" id="product-description" showCount maxLength={300} placeholder="텍스트를 작성해주세요"></TextArea>
+          <Form.Item label={<div className='upload-label'>글쓰기</div>} name='desc' rules={[{ required: true, message: "텍스트를 입력해주세요." }]}>
+            <TextArea className={styles.Textarea} size='large' id='product-description' showCount maxLength={300} placeholder='텍스트를 작성해주세요'></TextArea>
           </Form.Item>
           <Form.Item>
             {contextHolder}
-            <Button id={styles.submitButton} htmlType="submit" onClick={info}>
+            <Button id={styles.submitButton} htmlType='submit' onClick={info}>
               후기등록하기
             </Button>
-            <Button id={styles.resetButton} htmlType="button" onClick={onReset}>
+            <Button id={styles.resetButton} htmlType='button' onClick={onReset}>
               Reset
             </Button>
           </Form.Item>

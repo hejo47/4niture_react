@@ -1,5 +1,5 @@
 .reviewCon {
-  width: calc(98% / 4);
+  width: calc(97% / 4);
 }
 @media (max-width: 768px) {
   .reviewCon {
@@ -14,20 +14,10 @@
   column-gap: 15px;
 }
 .authorimg {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background-color: #eee;
-}
-.authorname {
-  font-size: 13px;
-  color: #333;
-}
-.authorfollow {
-  color: skyblue;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 .contentimg {
@@ -53,14 +43,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
   padding: 0 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
 }
 .contents span {
-  font-size: 30px;
+  font-size: 16px;
   color: #aaa;
   margin-right: 10px;
 }
 span.btnspan {
-  font-size: 25px;
+  font-size: 16px;
+}
+span.authorfollow {
+  color: skyblue;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0px;
+}
+span.authorname {
+  font-size: 13px;
+  color: #333;
+  margin-right: 0px;
 }

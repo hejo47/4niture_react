@@ -38,6 +38,7 @@ const Header = () => {
               <img src={logoImg} alt='logo' />
             </h1>
           </Link>
+          <UploadBtnAD></UploadBtnAD>
         </div>
       </ContainerFT>
       <div className={classes.gnbWrap}>
@@ -45,7 +46,6 @@ const Header = () => {
           <div className={classes.gnbAD}>
             <GnbAD></GnbAD>
             <div className={classes.gnbBtn}>
-              <UploadBtnAD></UploadBtnAD>
               <SearchAD></SearchAD>
             </div>
           </div>
