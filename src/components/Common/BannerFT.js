@@ -53,8 +53,8 @@ const Swipe = () => {
         effect={"fade"}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
         // onSlideChange={() => console.log("slide change")}
 
         autoplay={{
@@ -65,19 +65,17 @@ const Swipe = () => {
         zoom={true}
       >
         {bannerobj.map((item) => {
-          
           return (
             <SwiperSlide>
               <div className={styles.imgbox} key={item.id}>
                 <div className={styles.Textbox}>
                   <div className={styles.springWrap}>
-                    <img src={springSale} alt="스프링세일" />
+                    <img src={springSale} alt='스프링세일' />
                   </div>
                   <h2>{item.desc}</h2>
-                  {item.desc===""?(<></>):(<a href="#">Shop The Sale</a>)}
-
+                  {item.desc === "" ? <></> : <a href='#'>Shop The Sale</a>}
                 </div>
-                <img src={item.imgUrl} alt="배너" />
+                <img src={item.imgUrl} alt='배너' />
               </div>
             </SwiperSlide>
           );
