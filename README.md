@@ -4,11 +4,13 @@
 
 ## 배포주소
 
-1. 🏠개발 버전: [https://4urniture-react.vercel.app/](https://4urniture-react.vercel.app/)
+1. 🏠프론트 개발: [https://4urniture-react.vercel.app/](https://4urniture-react.vercel.app/)
 
-2. 🚀프론트 git : [https://github.com/hejo47/4urniture_react/tree/main](https://github.com/hejo47/4urniture_react/tree/main)
+2. 🏢서버 호스팅 주소: [https://port-0-furnitureserver-nx562olfdt8jh2.sel3.cloudtype.app/](https://port-0-furnitureserver-nx562olfdt8jh2.sel3.cloudtype.app/)
 
-3. 🏢백엔드 git :[https://github.com/naehyun25/4niture_server.git](https://github.com/naehyun25/4niture_server.git)
+3. 🚀프론트 git : [https://github.com/hejo47/4urniture_react/tree/main](https://github.com/hejo47/4urniture_react/tree/main)
+
+4. 🚀백엔드 git :[https://github.com/naehyun25/4niture_server.git](https://github.com/naehyun25/4niture_server.git)
 
 ## 개발기간
 
@@ -55,17 +57,27 @@
 
 ### Front
 
-    1.  git clone https://github.com/hejo47/4urniture_react.git
-    2.  npm i
-    3.  npm i react-router-dom
-    4.  npm i antd
-    5.  npm install swiper
-    6.  npm i axios
+    1.  $ git clone https://github.com/hejo47/4urniture_react.git
+    2.  $ cd 4urniture_react.git
+    3.  $ nvm use v.16.19.0
+    4.  $ npx create-react-app .
+    5.  $ npm i react-router-dom
+    6.  $ npm i antd
+    7.  $ npm install swiper
+    8.  $ npm i axios
+    9.  $ npm start
 
 ### Backs
 
-    1. git clone https://github.com/naehyun25/4niture_server.git
-    2. npm i
+    1. $ git clone https://github.com/naehyun25/4niture_server.git
+    2. $ cd 4niture_server
+    3. $ nvm use v.16.19.0
+    4. $ npm init
+    5. $ npm i nodemon
+    6. $ npm i multer
+    7. $ npm i sequelize
+    8. $ npm i sqlite3
+    9. $ npm start
 
 ## 구현 기능
 
