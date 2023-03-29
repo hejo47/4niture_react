@@ -44,7 +44,6 @@ const ReviewsFT = () => {
       .get(`${API_URL}/reviews`)
       .then((result) => {
         const reviews = result.data.reviews.slice(0, 4);
-        console.log(reviews);
         setItems(reviews);
       })
       .catch((error) => {
@@ -57,7 +56,7 @@ const ReviewsFT = () => {
       <ContainerFT>
         <div className={classes.reviewWrap}>
           {items.map((review, idx) => {
-            return <ReviewItemFT author={review.name} imageUrl={`${API_URL}/${review.imageUrl}`} key={idx}></ReviewItemFT>;
+            return <ReviewItemFT key={idx} author={review.name} imageUrl={`${API_URL}/${review.imageUrl}`}></ReviewItemFT>;
           })}
         </div>
       </ContainerFT>

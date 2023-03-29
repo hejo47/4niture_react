@@ -62,13 +62,13 @@ const Swipe = () => {
         {bannerobj.map((item) => {
           return (
             <SwiperSlide>
-              <div class={styles.imgbox}>
+              <div className={styles.imgbox} key={item.id}>
                 <div className={styles.Textbox}>
-                  <div class={styles.springWrap}>
+                  <div className={styles.springWrap}>
                     <img src={springSale} alt="스프링세일" />
                   </div>
                   <h2>{item.desc}</h2>
-                  <a>Shop The Sale</a>
+                  <a href="#">Shop The Sale</a>
                 </div>
                 <img src={item.imgUrl} alt="배너" />
               </div>

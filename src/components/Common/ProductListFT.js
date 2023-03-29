@@ -25,7 +25,7 @@ const ProductListFT = (props) => {
         let { id, name, price, imageUrl, size } = products;
         const convertPrice = price.toLocaleString("ko-KR");
         return (
-          <Link to={`./products/${id}`}>
+          <Link key={idx} to={`./products/${id}`}>
             <div className={classes.product}>
               <div className={classes.productImg}>
                 <img src={`${API_URL}/${imageUrl}`} alt={`${name}사진`} />
