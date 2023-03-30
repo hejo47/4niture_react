@@ -18,6 +18,7 @@ import ReviewGetAD from "./components/pages/ReviewGetAD";
 import TopBtn from "./components/Common/TopBtnAD";
 import CategoryRoutes from "./components/pages/CategoryRoutes";
 import OptionRoutesFT from "./components/pages/OptionRoutesFT";
+import SearchResultPageFT from "./components/pages/SearchResultPageFT";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
             </>
           }
         />
+        <Route path='/search' element={<SearchResultPageFT />}></Route>
         <Route
           path="/products/upload" // 새 상품 올리기
           element={
