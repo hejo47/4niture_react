@@ -91,7 +91,7 @@ const UploadAD = () => {
           <TextArea  rows={4}/>
         </Form.Item>
         <Form.Item label="Upload" valuePropName="image">
-          <Upload name="image" action={`${API_URL}/image`} listType="picture-card"
+          <Upload name="image" action={`${API_URL}/image`} listType="picture-card" maxCount={1}
           onChange={pathImage}>
             <div>
               <PlusOutlined />
