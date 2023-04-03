@@ -4,11 +4,13 @@
 
 ## 배포주소
 
-1. 🏠개발 버전: [https://4urniture-react.vercel.app/](https://4urniture-react.vercel.app/)
+1. 🏠프론트 개발: [https://4urniture-react.vercel.app/](https://4urniture-react.vercel.app/)
 
-2. 🚀프론트 git : [https://github.com/hejo47/4urniture_react/tree/main](https://github.com/hejo47/4urniture_react/tree/main)
+2. 🏢서버 호스팅 주소: [https://port-0-furnitureserver-nx562olfdt8jh2.sel3.cloudtype.app/](https://port-0-furnitureserver-nx562olfdt8jh2.sel3.cloudtype.app/)
 
-3. 🏢백엔드 git :[https://github.com/naehyun25/4niture_server.git](https://github.com/naehyun25/4niture_server.git)
+3. 🚀프론트 git : [https://github.com/hejo47/4urniture_react/tree/main](https://github.com/hejo47/4urniture_react/tree/main)
+
+4. 🚀백엔드 git :[https://github.com/naehyun25/4niture_server.git](https://github.com/naehyun25/4niture_server.git)
 
 ## 개발기간
 
@@ -33,13 +35,17 @@
 
 ### Communication
 
-<br>
-<img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"><img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"><img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+<img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+
 <br>
 
 ## 프로젝트 소개
 
-이 프로젝트는 PWA 앱으로 제작된 **반응형 풀스택 프로젝트**입니다. 프론트엔드는 **리액트**로 제작되었으며, 백엔드는 **Node.js의 Express 프레임워크**를 활용하여 서버를 구현하였습니다. 데이터베이스는 Sequelize를 사용하여 관리합니다. 이 프로젝트는 모바일과 데스크탑 모두에서 쉽게 사용할 수 있도록 반응형으로 제작되었습니다. 사용자 친화적인 **PWA 앱**으로, 간단한 설정으로 모바일 기기에서도 쉽게 이용할 수 있습니다.
+이 프로젝트는 PWA 앱으로 제작된 **반응형 풀스택 프로젝트**입니다.  
+프론트엔드는 **리액트**로 제작되었으며, 백엔드는 **Node.js의 Express 프레임워크**를 활용하여 서버를 구현하였습니다.  
+데이터베이스는 Sequelize를 사용하여 관리합니다.  
+이 프로젝트는 모바일과 데스크탑 모두에서 쉽게 사용할 수 있도록 반응형으로 제작되었습니다.  
+사용자 친화적인 **PWA 앱**으로, 간단한 설정으로 모바일 기기에서도 쉽게 이용할 수 있습니다.
 <br>
 
 <img src="./images/mainpage.png">
@@ -51,17 +57,27 @@
 
 ### Front
 
-    1.  git clone https://github.com/hejo47/4urniture_react.git
-    2.  npm i
-    3.  npm i react-router-dom
-    4.  npm i antd
-    5.  npm install swiper
-    6.  npm i axios
+    1.  $ git clone https://github.com/hejo47/4urniture_react.git
+    2.  $ cd 4urniture_react.git
+    3.  $ nvm use v.16.19.0
+    4.  $ npx create-react-app .
+    5.  $ npm i react-router-dom
+    6.  $ npm i antd
+    7.  $ npm install swiper
+    8.  $ npm i axios
+    9.  $ npm start
 
 ### Backs
 
-    1. git clone https://github.com/naehyun25/4niture_server.git
-    2. npm i
+    1. $ git clone https://github.com/naehyun25/4niture_server.git
+    2. $ cd 4niture_server
+    3. $ nvm use v.16.19.0
+    4. $ npm init
+    5. $ npm i nodemon
+    6. $ npm i multer
+    7. $ npm i sequelize
+    8. $ npm i sqlite3
+    9. $ npm start
 
 ## 구현 기능
 
