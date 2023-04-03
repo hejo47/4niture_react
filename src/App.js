@@ -19,15 +19,16 @@ import TopBtn from "./components/Common/TopBtnAD";
 import CategoryRoutes from "./components/pages/CategoryRoutes";
 import OptionRoutesFT from "./components/pages/OptionRoutesFT";
 import SearchResultPageFT from "./components/pages/SearchResultPageFT";
+import CateProductsAD from "./components/pages/CateProductsAD";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <HeaderFT></HeaderFT>
 
       <Routes>
         <Route
-          path="/" // 메인
+          path='/' // 메인
           element={
             <>
               <Swipe />
@@ -45,10 +46,10 @@ function App() {
           }
         />
 
-        <Route path="/products/:id" element={<ProductDetail />}></Route>
+        <Route path='/products/:id' element={<ProductDetail />}></Route>
 
         <Route
-          path="/login" // 로그인
+          path='/login' // 로그인
           element={
             <>
               <ContainerFT>
@@ -61,7 +62,7 @@ function App() {
         />
         <Route path='/search' element={<SearchResultPageFT />}></Route>
         <Route
-          path="/products/upload" // 새 상품 올리기
+          path='/products/upload' // 새 상품 올리기
           element={
             <>
               <ContainerFT>
@@ -73,7 +74,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/review/upload" // 리뷰 올리기
+          path='/review/upload' // 리뷰 올리기
           element={
             <>
               <ContainerFT>
@@ -87,7 +88,7 @@ function App() {
           }
         />
         <Route
-          path="/review/reviewPage" // 리뷰페이지
+          path='/review/reviewPage' // 리뷰페이지
           element={
             <>
               <ContainerFT>
@@ -100,7 +101,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/products/new" // 새 상품 리스트
+          path='/products/new' // 새 상품 리스트
           element={
             <>
               <OptionRoutesFT />
@@ -108,7 +109,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/products/best" // 베스트 상품 리스트
+          path='/products/best' // 베스트 상품 리스트
           element={
             <>
               <OptionRoutesFT />
@@ -116,7 +117,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/products" // 전체 상품 리스트(장바구니에 링크걸어둠)
+          path='/products' // 전체 상품 리스트(장바구니에 링크걸어둠)
           element={
             <>
               <ContainerFT>
@@ -129,7 +130,7 @@ function App() {
         />
 
         <Route
-          path="/products/category/all" // 전체 카테고리 상품 리스트
+          path='/products/category/all' // 전체 카테고리 상품 리스트
           element={
             <>
               <ContainerFT>
@@ -142,7 +143,7 @@ function App() {
         />
 
         <Route
-          path="/showroom" // 전체 카테고리 상품 리스트
+          path='/showroom' // 전체 카테고리 상품 리스트
           element={
             <>
               <ContainerFT>
@@ -153,12 +154,12 @@ function App() {
             </>
           }
         />
-        <Route path="products/category/storage" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/table" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/chair" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/bedroom" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/kitchen" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/homedeco" element={<CategoryRoutes></CategoryRoutes>}></Route>
+        <Route path='products/category/storage' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/table' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/chair' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/bedroom' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/kitchen' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/homedeco' element={<CateProductsAD></CateProductsAD>}></Route>
       </Routes>
       <FooterFT></FooterFT>
     </div>
