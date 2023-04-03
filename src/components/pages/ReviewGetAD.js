@@ -6,8 +6,8 @@ import { Link, Routes, Route } from "react-router-dom";
 import { Card, ConfigProvider, Col, Row } from "antd";
 import axios from "axios";
 import { API_URL } from "../../config/constants";
-import ReviewSub from "./ReviewSubAD";
 import "./ReviewGetAD.css";
+import ReviewDetailAD from "./ReviewDetail";
 const { Meta } = Card;
 
 const ReviewGetAD = () => {
@@ -43,13 +43,12 @@ const ReviewGetAD = () => {
         >
           {reviews.map((review, idx) => {
             // console.log(review);
-
+            let { id } = review;
             return (
               <>
-                <Routes>{<Route path='/review/upload' element={<ReviewSub />}></Route>}</Routes>
-                <Col span={6} xs={24} md={12} sm={12} lg={6} key={idx} className='reviewCard'>
-                  <Card hoverable cover={<img alt='review-img' src={`${API_URL}/${review.imageUrl}`} />}>
-                    <Link to='/review/upload'>
+                <Col span={6} xs={24} md={12} sm={12} lg={6} key={idx} className="reviewCard">
+                  <Card hoverable cover={<img alt="review-img" src={`${API_URL}/${review.imageUrl}`} />}>
+                    <Link key={idx} to={`/review/reviewDetail/${id}`}>
                       <span>작성자:</span>
                       <Meta title={review.name} />
                       <span>상품명:</span>

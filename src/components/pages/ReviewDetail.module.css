@@ -1,0 +1,83 @@
+.detail_box {
+    width: 80%;
+    margin: 50px auto;
+    color: #383633;
+  }
+  .detail_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .detail_image {
+    display: flex;
+    width: 48%;
+  }
+  .detail_contentbox {
+    width: 48%;
+    height: 100%;
+    
+  }
+  .detail_text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: navy;
+    
+  }
+  
+  .detail_image img {
+    width: 100%;
+  }
+  .detail_name {
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+ 
+  .detail_info {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  .paybutton_box {
+    margin-top: 20px;
+  }
+  
+  .detail_desc {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+  
+  .detail_backbutton button {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .detail_Carousel_box {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .detail_subimage_box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .detail_subimage_num {
+    width: 100%;
+    height: 100%;
+  }
+  .detail_subimage_num img {
+    width: 100%;
+    height: 100%;
+  }
+  .slick-dots li.slick-active button {
+    background-color: black;
+  }
+  .Writer{
+    font-weight: bold;
+    color: navy;
+    margin-right: 10px;
+  }
