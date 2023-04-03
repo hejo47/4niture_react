@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Menu } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { useNavigate, Link, Route } from "react-router-dom";
@@ -69,11 +69,9 @@ const GnbAD = () => {
   const navigate = useNavigate();
   const onClick = (e) => {
     if (e.key === "0") {
-      return <Route></Route>;
       navigate("/products/category/all");
-      // return <Link to='/products/category/all'></Link>;
-      // console.log(items);
     } else if (e.key === "1") {
+      // window.location.href = `/products/category/storage`;
       navigate("/products/category/storage");
     } else if (e.key === "2") {
       // window.location.href = `/products/category/table`;

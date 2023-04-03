@@ -20,7 +20,7 @@ const TotalProductPageAD = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [items]);
 
   return (
     <>
