@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Card, ConfigProvider, Col, Row } from "antd";
 import axios from "axios";
 import { API_URL } from "../../config/constants";
-import classes from "./CateProductsAD.module.css"
+import classes from "./CateProductsAD.module.css";
 import ContainerFT from "../UI/ContainerFT";
 import "./OptionProductsAD.css";
 
@@ -22,7 +22,7 @@ const TotalProductPageAD = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [items]);
 
   return (
     <>
@@ -45,7 +45,7 @@ const TotalProductPageAD = () => {
           >
             {items.map((item, idx) => {
               let { id, name, price, imageUrl, desc } = item;
-              const convertPrice = price.toLocaleString('ko-KR');
+              const convertPrice = price.toLocaleString("ko-KR");
               return (
                 <Col span={6} xs={24} md={12} sm={12} lg={6} className='reviewCard'>
                   <Card hoverable cover={<img alt={`${name}사진`} src={`${API_URL}/${imageUrl}`} />}>
