@@ -19,11 +19,9 @@ import TopBtn from "./components/Common/TopBtnAD";
 import CategoryRoutes from "./components/pages/CategoryRoutes";
 import OptionRoutesFT from "./components/pages/OptionRoutesFT";
 import SearchResultPageFT from "./components/pages/SearchResultPageFT";
-<<<<<<< HEAD
 import ReviewDetailAD from "../src/components/pages/ReviewDetail";
-=======
 import CateProductsAD from "./components/pages/CateProductsAD";
->>>>>>> 40ae86726f23be546a39ab1588c20a8162cd9af7
+
 
 function App() {
   return (
@@ -160,14 +158,7 @@ function App() {
           }
         />
 
-<<<<<<< HEAD
-        <Route path="products/category/storage" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/table" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/chair" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/bedroom" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/kitchen" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/homedeco" element={<CategoryRoutes></CategoryRoutes>}></Route>
-=======
+
         <Route
           path='/showroom' // 전체 카테고리 상품 리스트
           element={
@@ -186,7 +177,7 @@ function App() {
         <Route path='products/category/bedroom' element={<CateProductsAD></CateProductsAD>}></Route>
         <Route path='products/category/kitchen' element={<CateProductsAD></CateProductsAD>}></Route>
         <Route path='products/category/homedeco' element={<CateProductsAD></CateProductsAD>}></Route>
->>>>>>> 40ae86726f23be546a39ab1588c20a8162cd9af7
+
       </Routes>
       <FooterFT></FooterFT>
     </div>
