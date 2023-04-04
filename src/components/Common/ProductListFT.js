@@ -32,7 +32,7 @@ const ProductListFT = (props) => {
               </div>
               <div className={classes.productDescription}>
                 <p className={classes.productName}>{name}</p>
-                <p className={classes.productPrice}>{convertPrice}</p>
+                <p className={classes.productPrice}>￦{convertPrice}</p>
                 <p className={classes.size}>size{size}</p>
               </div>
             </div>
