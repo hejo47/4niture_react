@@ -3,6 +3,7 @@ import { API_URL } from "../../config/constants.js";
 import { Button, ConfigProvider, Form, Input, Upload, Divider, message } from "antd";
 import styles from "./ReviewSubAD.module.css";
 import axios from "axios";
+import { CameraOutlined } from "@ant-design/icons";
 
 const { TextArea } = Input;
 
@@ -63,8 +64,9 @@ const ReviewSub = () => {
                     <img id={styles.uploadImg} src={`${API_URL}/${imageUrl}`} alt='' />
                   ) : (
                     <div id={styles.imguploadbox}>
-                      <img src='../images/icons/camera.png' alt='' />
-                      <span style={{ display: "block", textAlign: "center" }}>사진을올려주세요.</span>
+                      {/* <img src='../images/icons/camera.png' alt='' /> */}
+                      <CameraOutlined style={{ marginBottom: 15, fontSize: 25, display: "flex", justifyContent: "center" }} />
+                      <span style={{ display: "block", textAlign: "center" }}>사진을 올려 주세요.</span>
                       <span style={{ display: "block", textAlign: "center" }}>jpg | png</span>
                     </div>
                   )}
