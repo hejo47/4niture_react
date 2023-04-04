@@ -19,6 +19,9 @@ import TopBtn from "./components/Common/TopBtnAD";
 import CategoryRoutes from "./components/pages/CategoryRoutes";
 import OptionRoutesFT from "./components/pages/OptionRoutesFT";
 import SearchResultPageFT from "./components/pages/SearchResultPageFT";
+import ReviewDetailAD from "../src/components/pages/ReviewDetail";
+import CateProductsAD from "./components/pages/CateProductsAD";
+
 
 function App() {
   return (
@@ -59,7 +62,7 @@ function App() {
             </>
           }
         />
-        <Route path='/search' element={<SearchResultPageFT />}></Route>
+        <Route path="/search" element={<SearchResultPageFT />}></Route>
         <Route
           path="/products/upload" // 새 상품 올리기
           element={
@@ -86,6 +89,7 @@ function App() {
             </>
           }
         />
+
         <Route
           path="/review/reviewPage" // 리뷰페이지
           element={
@@ -93,6 +97,19 @@ function App() {
               <ContainerFT>
                 <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
                   <ReviewGetAD />
+                </div>
+              </ContainerFT>
+              <TopBtn />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/review/reviewDetail/:id"
+          element={
+            <>
+              <ContainerFT>
+                <div style={{ margin: "0 auto", paddingTop: 100, paddingBottom: 100 }}>
+                  <ReviewDetailAD />
                 </div>
               </ContainerFT>
               <TopBtn />
@@ -141,8 +158,9 @@ function App() {
           }
         />
 
+
         <Route
-          path="/showroom" // 전체 카테고리 상품 리스트
+          path='/showroom' // 전체 카테고리 상품 리스트
           element={
             <>
               <ContainerFT>
@@ -153,12 +171,13 @@ function App() {
             </>
           }
         />
-        <Route path="products/category/storage" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/table" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/chair" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/bedroom" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/kitchen" element={<CategoryRoutes></CategoryRoutes>}></Route>
-        <Route path="products/category/homedeco" element={<CategoryRoutes></CategoryRoutes>}></Route>
+        <Route path='products/category/storage' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/table' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/chair' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/bedroom' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/kitchen' element={<CateProductsAD></CateProductsAD>}></Route>
+        <Route path='products/category/homedeco' element={<CateProductsAD></CateProductsAD>}></Route>
+
       </Routes>
       <FooterFT></FooterFT>
     </div>

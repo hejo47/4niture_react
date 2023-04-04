@@ -1,5 +1,6 @@
 .reviewCon {
   width: calc(97% / 4);
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .reviewCon {

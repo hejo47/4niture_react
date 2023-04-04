@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Menu } from "antd";
-import { useState } from "react";
 import { MenuOutlined } from "@ant-design/icons";
-import { API_URL } from "../../config/constants";
-
+import { useNavigate, Link, Route } from "react-router-dom";
 const items = [
   {
     label: "CATEGORY",
@@ -68,35 +66,44 @@ const items = [
   },
 ];
 const GnbAD = () => {
+  const navigate = useNavigate();
   const onClick = (e) => {
-    if (e.key == 0) {
-      window.location.href = `/products/category/all`;
-    } else if (e.key == 1) {
-      window.location.href = `/products/category/storage`;
-    } else if (e.key == 2) {
-      window.location.href = `/products/category/table`;
-    } else if (e.key == 3) {
-      window.location.href = `/products/category/chair`;
-    } else if (e.key == 4) {
-      window.location.href = `/products/category/bedroom`;
-    } else if (e.key == 5) {
-      window.location.href = `/products/category/kitchen`;
-    } else if (e.key == 6) {
-      window.location.href = `/products/category/homedeco`;
-    } else if (e.key == "new") {
-      window.location.href = `/products/new`;
-    } else if (e.key == "best") {
-      window.location.href = `/products/best`;
-    } else if (e.key == "showroom") {
-      window.location.href = `/showroom`;
-      // } else if (e.key == "event") {
-      //   alert("준비중입니다.");
-    } else if (e.key == "review") {
-      window.location.href = `/review/upload`;
+    if (e.key === "0") {
+      navigate("/products/category/all");
+    } else if (e.key === "1") {
+      // window.location.href = `/products/category/storage`;
+      navigate("/products/category/storage");
+    } else if (e.key === "2") {
+      // window.location.href = `/products/category/table`;
+      navigate("/products/category/table");
+    } else if (e.key === "3") {
+      // window.location.href = `/products/category/chair`;
+      navigate("/products/category/chair");
+    } else if (e.key === "4") {
+      // window.location.href = `/products/category/bedroom`;
+      navigate("/products/category/bedroom");
+    } else if (e.key === "5") {
+      // window.location.href = `/products/category/kitchen`;
+      navigate("/products/category/kitchen");
+    } else if (e.key === "6") {
+      // window.location.href = `/products/category/homedeco`;
+      navigate("/products/category/homedeco");
+    } else if (e.key === "new") {
+      // window.location.href = `/products/new`;
+      navigate("/products/new");
+    } else if (e.key === "best") {
+      // window.location.href = `/products/best`;
+      navigate("/products/best");
+    } else if (e.key === "showroom") {
+      // window.location.href = `/showroom`;
+      navigate("/showroom");
+    } else if (e.key === "review") {
+      // window.location.href = `/review/upload`;
+      navigate("/review/upload");
     } else {
       console.log("error");
     }
   };
-  return <Menu onClick={onClick} mode="horizontal" items={items} />;
+  return <Menu onClick={onClick} mode='horizontal' items={items} />;
 };
 export default GnbAD;

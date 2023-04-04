@@ -28,36 +28,36 @@ const App = () => {
             rules={[
               {
                 required: true,
-                message: "Please input your Username!",
+                message: "아이디를 적어주세요!",
               },
             ]}
           >
-            <Input prefix={<UserOutlined className='site-form-item-icon' />} placeholder='Username' />
+            <Input prefix={<UserOutlined className='site-form-item-icon' />} placeholder='아이디' />
           </Form.Item>
           <Form.Item
             name='password'
             rules={[
               {
                 required: true,
-                message: "Please input your Password!",
+                message: "비밀번호를 적어주세요!",
               },
             ]}
           >
-            <Input prefix={<LockOutlined className='site-form-item-icon' />} type='password' placeholder='Password' />
+            <Input prefix={<LockOutlined className='site-form-item-icon' />} type='password' placeholder='비밀번호' />
           </Form.Item>
           <Form.Item>
             <Form.Item name='remember' valuePropName='checked' noStyle>
-              <Checkbox>Remember me</Checkbox>
+              <Checkbox>계정 기억하기</Checkbox>
             </Form.Item>
             <a className='login-form-forgot' href='/'>
-              Forgot password
+              비밀번호를 잊어버렸다면?
             </a>
           </Form.Item>
           <Form.Item>
             <Button type='primary' htmlType='submit' className='login-form-button'>
-              Log in
+              로그인
             </Button>
-            Or <a href='/'> register now!</a>
+            하거나 <a href='/'> 회원가입하세요!</a>
           </Form.Item>
         </Form>
       </ConfigProvider>
