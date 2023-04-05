@@ -16,19 +16,19 @@ const ShowRoomFT = () => {
               27,000원
             </span>
           </Link>
-          <Link to="" className={classes.ShowRoomDesc}>
+          <Link to="https://4niture-react.vercel.app/products/16" className={classes.ShowRoomDesc}>
             <span className={`${classes.curclew} ${classes.point2}`}></span>
             <span className={`${classes.DescText} ${classes.DescText2}`}>
               Bedroom side Table
               <br />
-              88,000원
+              220,000원
             </span>
           </Link>
-          <Link to="" className={classes.ShowRoomDesc}>
+          <Link to="https://4niture-react.vercel.app/products/15" className={classes.ShowRoomDesc}>
             <span className={`${classes.curclew} ${classes.point3}`}></span>
             <span className={`${classes.DescText} ${classes.DescText3}`}>
               Bamboo Pillow <br />
-              32,000원
+              50,000원
             </span>
           </Link>
           <Link to="" className={classes.ShowRoomDesc}>
