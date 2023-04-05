@@ -1,0 +1,16 @@
+.detail_backbutton button {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #F25A29;
+    border-radius: 10px;
+    border:none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .detail_backbutton button:hover{
+    opacity: 0.5;
+    transition: all 0.5s;
+  }
