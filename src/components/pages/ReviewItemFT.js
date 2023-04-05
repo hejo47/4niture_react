@@ -1,12 +1,17 @@
 import React from "react";
 import classes from "./ReviewItemFT.module.css";
-import { Link } from "react-router-dom";
+import { Link,nav, useNavigate } from "react-router-dom";
 import { HeartOutlined, BookOutlined, CommentOutlined } from "@ant-design/icons";
 
+
 const ReviewItemFT = (props) => {
+  const nav=useNavigate();
+  const reviewHandler = ()=>{
+    nav("/review/reviewpage");
+  };
   return (
-    <div className={classes.reviewCon}>
-      <Link to='review/reviewpage' className={classes.contentholder}>
+    <div className={classes.reviewCon} onClick={reviewHandler}>
+      
         <div className={classes.contentimg}>
           <img src={props.imageUrl} alt={`${props.author} 님의 리뷰`} />
           <div className={classes.contents}>
@@ -26,7 +31,7 @@ const ReviewItemFT = (props) => {
             </div>
           </div>
         </div>
-      </Link>
+     
     </div>
   );
 };
