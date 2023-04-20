@@ -4,11 +4,11 @@
 
 ## 배포주소
 
-1. 🏠프론트 개발: [https://4niture-react.vercel.app/](https://4urniture-react.vercel.app/)
+1. 🏠프론트 개발: [https://4niture-react.vercel.app/](https://4niture-react.vercel.app/)
 
 2. 🏢서버 호스팅 주소: [https://port-0-furnitureserver-nx562olfdt8jh2.sel3.cloudtype.app/](https://port-0-furnitureserver-nx562olfdt8jh2.sel3.cloudtype.app/)
 
-3. 🚀프론트 git : [https://github.com/hejo47/4niture_react/tree/main](https://github.com/hejo47/4urniture_react/tree/main)
+3. 🚀프론트 git : [https://github.com/hejo47/4niture_react/tree/main](https://github.com/hejo47/4niture_react/tree/main)
 
 4. 🚀백엔드 git :[https://github.com/naehyun25/4niture_server.git](https://github.com/naehyun25/4niture_server.git)
 
